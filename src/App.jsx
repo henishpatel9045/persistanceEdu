@@ -1,21 +1,14 @@
-import { Container, Row } from 'react-bootstrap'
-import AnimatedBG from './app/components/AnimatedBG'
-import ButtonBase from './app/components/ButtonBase'
-import TextOpacityBG from './app/components/TextOpacityBG'
-import Pagination from './app/components/Pagination'
-import HeaderIMG from './app/components/HeaderIMG'
+import { Container, NavItem, Row } from 'react-bootstrap'
 import HomeHead from './app/components/HomeHead'
+import MainNavbar from './app/components/navbar/MainNavbar'
 
 function App() {
   return (
     <div className="App">
-      <AnimatedBG>
-        <Container>
-          <Row>
-            <HomeHead/>
-          </Row>
+        <Container fluid={true}>
+          {/* <MainNavbar/> */}
+          <HomeHead/>
         </Container>
-      </AnimatedBG>
     </div>
   )
 }

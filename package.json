@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://henishpatel9045.github.io/persistanceEdu/",
   "scripts": {
     "dev": "vite",
     "deploy": "gh-pages -d dist",

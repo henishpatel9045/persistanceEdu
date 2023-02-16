@@ -1,0 +1,35 @@
+@import "../components.scss";
+
+@mixin link-box-mixin {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.08) 100%
+  );
+  border-bottom: 3px solid #ffffff;
+  transition: all 0.2s ease-out;
+  color: #ffffff;
+}
+
+.nav-btn {
+  color: white;
+  border: none;
+  height: calc(1rem + 30px);
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  &:hover {
+    @include link-box-mixin;
+  }
+}
+
+.link-selected{
+    @include link-box-mixin;
+}
+
+.nav-container{
+    background-color: transparent;
+    filter: blur(12);
+}

@@ -34,8 +34,8 @@ function HeaderIMG() {
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
+            rowGap: "1rem"
         }}>
-            {/* <div className='carousel-main'> */}
             <Carousel
                 ref={currRef}
                 onSlide={(e) => setCurrPage(e+1)}
@@ -54,7 +54,6 @@ function HeaderIMG() {
                     <img src={I3} alt="" className="carousel-img" />
                 </Carousel.Item>
             </Carousel>
-            {/* </div> */}
             <Pagination currPage={currPage} totalPages={totalPages} next={handleNext} prev={handlePrev} />
         </div>
     )
