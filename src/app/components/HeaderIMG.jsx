@@ -31,6 +31,7 @@ function HeaderIMG() {
     return (
         <div style={{
             display: "flex",
+            width: "100%",
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
@@ -44,13 +45,13 @@ function HeaderIMG() {
                 indicators={false}
                 prevIcon={<div></div>}
                 nextIcon={<div></div>}>
-                <Carousel.Item >
+                <Carousel.Item className="carousel-img" >
                     <img src={I1} alt="" className="carousel-img" />
                 </Carousel.Item>
-                <Carousel.Item >
+                <Carousel.Item className="carousel-img">
                     <img src={I2} alt="" className="carousel-img" />
                 </Carousel.Item>
-                <Carousel.Item >
+                <Carousel.Item className="carousel-img">
                     <img src={I3} alt="" className="carousel-img" />
                 </Carousel.Item>
             </Carousel>
