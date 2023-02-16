@@ -5,6 +5,7 @@ import TextOpacityBG from './TextOpacityBG'
 import "./components.scss"
 import SUB from "../assets/header-sub.png";
 import ButtonBase from './ButtonBase'
+import MAINBG from "../assets/main-bg.png"
 
 const Header = () => {
   return (
@@ -35,6 +36,7 @@ function HomeHead() {
       justifyContent: "center",
       zIndex: "1",
     }}>
+    <img src={MAINBG} className="main-bg-img" />
       <Col sm={{ span: 12, order: "last" }} md={4}>
         <HeaderIMG />
       </Col>

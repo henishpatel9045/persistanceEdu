@@ -4,9 +4,10 @@
 $primary-main: #1681AB;
 
 .App{
-  background-color: #242424;
+  background-color: $primary-main;
   width: 100vw !important;
   height: 100vh !important;
+  overflow-x: hidden;
 }
 
 :root {

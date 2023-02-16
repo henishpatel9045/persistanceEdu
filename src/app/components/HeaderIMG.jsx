@@ -29,13 +29,8 @@ function HeaderIMG() {
     }
 
     return (
-        <div style={{
-            display: "flex",
-            width: "100%",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            rowGap: "1rem"
+        <div className='carousel-main' style={{
+            
         }}>
             <Carousel
                 ref={currRef}
