@@ -58,10 +58,37 @@ const HomeCarouselImage = [
 /* -------------------------------------------------------------------------- */
 
 
+const OurResultsData = [
+  {
+    title: "Out of 50 students 41 qualified JEE (Mains)"
+  },
+  {
+    title: "Three students got more than 99%"
+  },
+  {
+    title: "17 students out of 41 qualified got more than 95%"
+  },
+  {
+    title: "Our 12 students cleared IIT-JEE (Advanced) 2019"
+  },
+  {
+    title: "12 students appeared for NEET all qualified"
+  },
+  {
+    title: "41 students qualified JEE (Mains) 2019 out of 50"
+  },
+  {
+    title: "03 students qualified AIIMS in 2019"
+  },
+  {
+    title: "Our NEET topper Shrishti Prasad scored 634 marks studying in Ram Manohar Lohia Medical College"
+  },
+]
+
 const SocialLinks = {
   fb: "https://facebook.com",
   yt: "https://youtube.com",
   map: "https://google.com",
 };
 
-export { SitePages, HomeCards, HomeCarouselImage, SocialLinks };
+export { SitePages, OurResultsData, HomeCards, HomeCarouselImage, SocialLinks };

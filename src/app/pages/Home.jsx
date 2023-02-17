@@ -3,6 +3,7 @@ import HomeHead from '../components/HomeHead'
 import { Container } from 'react-bootstrap'
 import "../components/components.scss"
 import HCardsCompo from '../components/HCardsCompo'
+import OurResults from '../components/OurResults'
 
 function Home() {
     return (
@@ -14,6 +15,7 @@ function Home() {
                 <HomeHead />
             </Container>
             <HCardsCompo/>
+            <OurResults/>
         </>
     )
 }
