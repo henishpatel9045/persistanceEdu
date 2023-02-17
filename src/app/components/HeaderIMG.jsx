@@ -2,15 +2,25 @@ import React, { useEffect, useRef, useState } from 'react'
 import { Carousel } from 'react-bootstrap'
 
 import "./components.scss"
-
-import I1 from "../assets/i1.jpg"
-import I2 from "../assets/i2.jpg"
-import I3 from "../assets/i3.jpg"
 import Pagination from './Pagination'
 
+import { HomeCarouselImage } from '../data/data'
+
 function HeaderIMG() {
-    const [currPage, setCurrPage] = useState(1);
-    const [totalPages, setTotalPages] = useState(3);
+    const [currPage, setCurrPage] = useState(0);
+    const [totalPages, setTotalPages] = useState(0);
+    const [imageData, setImageData] = useState([]);
+
+    useEffect(() => {
+        setImageData(HomeCarouselImage.map((item, index) =>
+            <Carousel.Item className="carousel-img" key={index} >
+                <img src={item?.src} className="carousel-img" />
+            </Carousel.Item>));
+        setTotalPages(HomeCarouselImage.length);
+        setCurrPage(1);
+    }, [])
+
+    console.log(imageData);
 
     const currRef = useRef(null);
 
@@ -30,25 +40,17 @@ function HeaderIMG() {
 
     return (
         <div className='carousel-main' style={{
-            
+
         }}>
             <Carousel
                 ref={currRef}
-                onSlide={(e) => setCurrPage(e+1)}
+                onSlide={(e) => setCurrPage(e + 1)}
                 fade
                 className='carousel-container'
                 indicators={false}
                 prevIcon={<div></div>}
                 nextIcon={<div></div>}>
-                <Carousel.Item className="carousel-img" >
-                    <img src={I1} alt="" className="carousel-img" />
-                </Carousel.Item>
-                <Carousel.Item className="carousel-img">
-                    <img src={I2} alt="" className="carousel-img" />
-                </Carousel.Item>
-                <Carousel.Item className="carousel-img">
-                    <img src={I3} alt="" className="carousel-img" />
-                </Carousel.Item>
+                {imageData}
             </Carousel>
             <Pagination currPage={currPage} totalPages={totalPages} next={handleNext} prev={handlePrev} />
         </div>

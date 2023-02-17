@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Container, Navbar, Nav, NavDropdown, Row } from 'react-bootstrap'
 import "./navbar.scss";
-import LOGO from "../../assets/Logo.png";
+import LOGO from "../../assets/Logo.svg";
 
 function MainNavbar() {
   const items = [
@@ -39,7 +39,7 @@ function MainNavbar() {
             paddingLeft: "2.5rem"
           }}>
             <Navbar.Brand href="#home"><img src={LOGO} alt="Logo" /></Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" className='nav-toggle-btn' />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
               </Nav>

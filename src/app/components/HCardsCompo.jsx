@@ -1,25 +1,22 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import HCard from './HCard'
 import { Row, Col } from 'react-bootstrap'
+import { HomeCards } from '../data/data'
 
 function HCardsCompo() {
-    const [data, setData] = useState([
-        {
-            title: "HCard 1",
-        },
-        {
-            title: "HCard 2",
-        },
-        {
-            title: "HCard 3",
-        },
-    ])
+    const [data, setData] = useState([])
+
+    useEffect(() => {
+        setData(HomeCards)
+    }, [])
+
+
     return (
         <Row className='h-card-main m-0' style={{ padding: "4rem 1rem", rowGap: "1rem" }}>
             {data.map((item, index) => {
                 return (
-                    <Col className='' xs={12} sm={12} md={4}>
-                        <HCard key={index} title={item.title} />
+                    <Col key={index} className='' xs={12} sm={12} md={4}>
+                        <HCard title={item.txt} />
                     </Col>
                 )
             })}

@@ -40,3 +40,23 @@
   background-color: $primary-main;
   background: transparent;
 }
+
+.nav-toggle-btn{
+  cursor: pointer;
+  border: 0 !important;
+  
+  // &:focus{
+  //   outline: 0 !important;
+  // }
+
+  // &:hover{
+  //   outline: none;
+  //   background-color: #ffffff;
+  //   transition: all 0.2s ease-out;
+  // }
+
+  *{
+    color: white;
+  }
+
+}

@@ -1,11 +1,11 @@
 import React from 'react'
 import { Container, Col, Row } from 'react-bootstrap'
 import "./components.scss";
-import LOGO from "../assets/Logo.png"
-import FB from "../assets/fb.png"
-import YT from "../assets/yt.png"
-import MAP from "../assets/location.png"
-
+import LOGO from "../assets/Logo.svg"
+import FB from "../assets/fb.svg"
+import YT from "../assets/yt.svg"
+import MAP from "../assets/location.svg"
+import { SocialLinks, SitePages } from '../data/data';
 import IconLink from './IconLink';
 
 const MapBtn = ({ href }) => {
@@ -17,29 +17,6 @@ const MapBtn = ({ href }) => {
 
 
 function Footer() {
-    const items = [
-        {
-            title: 'Home',
-            href: "home"
-        },
-        {
-            title: 'About Us',
-            href: "about"
-        },
-        {
-            title: 'Our Cources',
-            href: "cources"
-        },
-        {
-            title: 'Achievements & Results',
-            href: "achievements"
-        },
-        {
-            title: 'Students Testimonials',
-            href: "testimonials"
-        },
-    ]
-
     return (
         <Container fluid className='footer-main'>
             <Row style={{
@@ -55,9 +32,9 @@ function Footer() {
                     flexWrap: "wrap",
                 }} >
                     <Row>
-                        {items.map((item, ind) => {
-                            return <Col lg="auto" xs={6}>
-                                <a className='footer-nav-link' key={ind} href={item.href}>{item.title}</a>
+                        {SitePages.map((item, ind) => {
+                            return <Col lg="auto" xs={6}  key={ind} >
+                                <a className='footer-nav-link' href={item.href}>{item.title}</a>
                             </Col>
                         })}
                     </Row>
@@ -68,11 +45,11 @@ function Footer() {
                         justifyContent: "center",
                         alignItems: "center",
                     }}>
-                        <IconLink href={"http://www.google.com"}>
+                        <IconLink href={SocialLinks.fb}>
                             <img src={FB} alt="Facebook" />
                         </IconLink>
-                        <IconLink>
-                            <img src={YT} alt="Facebook" />
+                        <IconLink href={SocialLinks.yt}>
+                            <img src={YT}  />
                         </IconLink>
                     </div>
                 </Col>
@@ -84,7 +61,7 @@ function Footer() {
             <Row>
                 <Col xs={12}>
                     <div className='footer-copyright'>
-                        <MapBtn href={"sd"} />
+                        <MapBtn href={SocialLinks.map} />
                         <span><b>&copy; Persistance Education.</b> All Rights Reserved.</span>
                     </div>
                 </Col>
