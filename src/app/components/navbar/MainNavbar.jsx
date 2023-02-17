@@ -28,13 +28,18 @@ function MainNavbar() {
   ]
 
   return (
-    <Row  >
+    <Row >
       <Col xs={12} style={{
-        padding: 0
+        padding: 0,
+        position: "relative"
       }}>
-        <Navbar sticky='top' collapseOnSelect expand="lg" className='navbar-main' style={{
-      zIndex: "1"
-    }}>
+        <Navbar collapseOnSelect expand="lg" className='navbar-main' style={{
+          backgroundColor: "rgba(255,255,255,0.0)",
+          zIndex: 15,
+          position: "absolute",
+          top: 0,
+          left: 0
+        }} >
           <Container fluid style={{
             paddingLeft: "2.5rem"
           }}>

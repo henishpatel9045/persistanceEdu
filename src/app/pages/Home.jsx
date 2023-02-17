@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap'
 import "../components/components.scss"
 import HCardsCompo from '../components/HCardsCompo'
 import OurResults from '../components/OurResults'
+import OurSystem from '../components/OurSystem'
 
 function Home() {
     return (
@@ -16,6 +17,7 @@ function Home() {
             </Container>
             <HCardsCompo/>
             <OurResults/>
+            <OurSystem/>
         </>
     )
 }
