@@ -429,3 +429,68 @@ $full: 100vh;
   }
 }
 
+/* ------------------------------ HOME COURCES ------------------------------ */
+
+.home-cource-card {
+  width: 100%;
+  border: 1px solid rgba(38, 35, 93, 0.3);
+  padding: 1.5rem 1rem;
+  flex: 1;
+  border-radius: 10px;
+  min-height: 15rem;
+  height: 100%;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  word-wrap: break-word;
+
+  div {
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(to right, #3d3d3d50, #32a4d000);
+  }
+
+  h3 {
+    color: #3d3d3d;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  p {
+    color: #3d3d3d;
+    font-weight: 400;
+    font-size: 1rem;
+
+    a {
+      color: #ff7b02;
+      text-transform: uppercase;
+    }
+  }
+}
+
+/* ----------------------------- PROGRAM-CONTACT ---------------------------- */
+
+.program-contact {
+  float: right;
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+
+  h6 {
+    color: #3d3d3d;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1rem;
+    width: 9rem !important;
+    text-align: end;
+  }
+
+  a {    
+    img {
+      width: 4.8rem !important;
+      height: 4.8rem !important;
+    }
+  }
+}

@@ -5,6 +5,7 @@ import "../components/components.scss"
 import HCardsCompo from '../components/HCardsCompo'
 import OurResults from '../components/OurResults'
 import OurSystem from '../components/OurSystem'
+import HomeCource from '../components/HomeCource'
 
 function Home() {
     return (
@@ -18,6 +19,7 @@ function Home() {
             <HCardsCompo/>
             <OurResults/>
             <OurSystem/>
+            <HomeCource/>
         </>
     )
 }

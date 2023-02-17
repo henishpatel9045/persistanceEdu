@@ -20,7 +20,8 @@ function Footer() {
     return (
         <Container fluid className='footer-main'>
             <Row style={{
-                rowGap: "1rem"
+                rowGap: "1rem",
+                alignItems: "center"
             }}>
                 <Col lg={2} xs={12} >
                     <img src={LOGO} />

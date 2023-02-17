@@ -53,6 +53,20 @@ const HomeCarouselImage = [
 /*                              CAME FROM SERVER                              */
 /* -------------------------------------------------------------------------- */
 
+const ProgramData = [
+  {
+    title: "One Year Program",
+    content: "One year course for Students who have recently passed class XII and are ambitious to clear IIT-JEE / MEDICAL after one year of passing class XII should enroll for this program."
+  },
+  {
+    title: "Two Year Program",
+    content: "Students who have recently passed class X and are ambitious to clear IIT-JEE / MEDICAL with class XII should enroll for this program."
+  },
+  {
+    title: "Foundation Program",
+    content: "In these sessions we prepare for NTSE and olympiads and cover the very basic fundamentals of maths and science of 11th standard primarily to bridge up the gap between differences in levels of school studies till class 10th and competitive exam requirements."
+  },
+]
 
 const OurResultsData = [
   {
@@ -85,6 +99,7 @@ const SocialLinks = {
   fb: "https://facebook.com",
   yt: "https://youtube.com",
   map: "https://google.com",
+  tel: "+917990577979",
 };
 
-export { SitePages, OurResultsData, HomeCards, HomeCarouselImage, SocialLinks };
+export { SitePages, ProgramData, OurResultsData, HomeCards, HomeCarouselImage, SocialLinks };
