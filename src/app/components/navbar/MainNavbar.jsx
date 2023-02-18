@@ -53,7 +53,7 @@ function MainNavbar() {
               <Nav>
                 {
                   items.map((item, index) => (
-                    <Nav.Link bsPrefix='nav-btn' key={index} href={item.href}>{item.title}</Nav.Link>
+                    <Nav.Link bsPrefix={index != 0 ? 'nav-btn' : 'nav-btn link-selected'} key={index} href={item.href}>{item.title}</Nav.Link>
                   ))
                 }
               </Nav>
