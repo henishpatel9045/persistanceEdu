@@ -7,6 +7,7 @@ import YT from "../assets/yt.svg"
 import MAP from "../assets/location.svg"
 import { SocialLinks, SitePages } from '../data/data';
 import IconLink from './IconLink';
+import { Link } from 'react-router-dom';
 
 const MapBtn = ({ href }) => {
     return <a href={href} className="footer-map-link">
@@ -35,7 +36,7 @@ function Footer() {
                     <Row>
                         {SitePages.map((item, ind) => {
                             return <Col lg="auto" xs={6}  key={ind} >
-                                <a className='footer-nav-link' href={item.href}>{item.title}</a>
+                                <Link to={item.href}><a className='footer-nav-link' href={item.href}>{item.title}</a></Link>
                             </Col>
                         })}
                     </Row>

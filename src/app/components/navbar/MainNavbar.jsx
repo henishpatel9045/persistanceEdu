@@ -3,6 +3,7 @@ import { Col, Container, Navbar, Nav, NavDropdown, Row } from 'react-bootstrap'
 import "./navbar.scss";
 import LOGO from "../../assets/Logo.svg";
 import { useMedia } from 'use-media';
+import { Link } from 'react-router-dom';
 
 function MainNavbar() {
   const items = [
@@ -27,7 +28,7 @@ function MainNavbar() {
       href: "testimonials"
     },
   ]
-  const isSM = useMedia({maxWidth: "768px"})
+  const isSM = useMedia({ maxWidth: "768px" })
 
   return (
     <Row >
@@ -53,7 +54,7 @@ function MainNavbar() {
               <Nav>
                 {
                   items.map((item, index) => (
-                    <Nav.Link bsPrefix={index != 0 ? 'nav-btn' : 'nav-btn link-selected'} key={index} href={item.href}>{item.title}</Nav.Link>
+                    <Link to={item.href}><Nav.Link bsPrefix={index != 0 ? 'nav-btn' : 'nav-btn link-selected'} key={index} href={item.href}>{item.title}</Nav.Link></Link>
                   ))
                 }
               </Nav>
