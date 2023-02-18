@@ -25,38 +25,33 @@
   }
 }
 
-.link-selected{
-    @include link-box-mixin;
+.link-selected {
+  @include link-box-mixin;
 }
 
-.nav-container{
-    background-color: transparent;
-    filter: blur(12);
+.nav-container {
+  background-color: transparent;
+  @media (max-width: 768px) {
+    background-color: $primary-main;
+    text-align: center;
+  }
 }
 
-.navbar-main{
+.navbar-main {
   width: 100vw;
   z-index: 0;
   background-color: $primary-main;
   background: transparent;
+
+  
 }
 
-.nav-toggle-btn{
-  cursor: pointer;
-  border: 0 !important;
-  
-  // &:focus{
-  //   outline: 0 !important;
-  // }
+#nav-toggle-btn {
+  color: #ffffffc0;
+  border: #ffffffc0;
+  outline: none;
 
-  // &:hover{
-  //   outline: none;
-  //   background-color: #ffffff;
-  //   transition: all 0.2s ease-out;
-  // }
-
-  *{
-    color: white;
+  span{
+    filter: brightness(0) invert(1);
   }
-
 }

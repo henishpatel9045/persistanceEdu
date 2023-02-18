@@ -6,6 +6,7 @@ import "./components.scss"
 import SUB from "../assets/header-sub.png";
 import ButtonBase from './ButtonBase'
 import MAINBG from "../assets/main-bg.png"
+import { useMedia } from 'use-media'
 
 const Header = () => {
   return (
@@ -27,7 +28,6 @@ const Header = () => {
   )
 }
 
-
 function HomeHead() {
   return (
     <Row className='main-bg' style={{
@@ -35,9 +35,10 @@ function HomeHead() {
       alignItems: "center",
       justifyContent: "center",
       zIndex: "1",
+      paddingTop: "8rem"
     }}>
     <img src={MAINBG} className="main-bg-img" />
-      <Col sm={{ span: 12, order: "last" }} md={4}>
+      <Col sm={{ span: 12, order: "last" }} md={4} >
         <HeaderIMG />
       </Col>
       <Col sm={{ span: 12, order: 'first' }} md={6}>

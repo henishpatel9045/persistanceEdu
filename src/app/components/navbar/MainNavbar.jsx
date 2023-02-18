@@ -2,6 +2,7 @@ import React from 'react'
 import { Col, Container, Navbar, Nav, NavDropdown, Row } from 'react-bootstrap'
 import "./navbar.scss";
 import LOGO from "../../assets/Logo.svg";
+import { useMedia } from 'use-media';
 
 function MainNavbar() {
   const items = [
@@ -26,6 +27,7 @@ function MainNavbar() {
       href: "testimonials"
     },
   ]
+  const isSM = useMedia({maxWidth: "768px"})
 
   return (
     <Row >
@@ -44,11 +46,11 @@ function MainNavbar() {
             paddingLeft: "2.5rem"
           }}>
             <Navbar.Brand href="#home"><img src={LOGO} alt="Logo" /></Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" className='nav-toggle-btn' />
-            <Navbar.Collapse id="responsive-navbar-nav">
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" id='nav-toggle-btn' />
+            <Navbar.Collapse id="responsive-navbar-nav" className='nav-container'>
               <Nav className="me-auto">
               </Nav>
-              <Nav className='nav-container'>
+              <Nav>
                 {
                   items.map((item, index) => (
                     <Nav.Link bsPrefix='nav-btn' key={index} href={item.href}>{item.title}</Nav.Link>
