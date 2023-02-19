@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { Container } from 'react-bootstrap'
+import BGCompo from '../components/BGCompo'
 
 import CourceHead from '../components/cources/CourceHead'
 import CourceSection from '../components/cources/CourceSection'
-import MainBG from '../components/MainBG'
 import { CourceData } from '../data/data'
 
 function OurCources() {
@@ -19,7 +19,7 @@ function OurCources() {
         padding: "0",
         margin: "0",
       }}>
-        <MainBG/>
+        <BGCompo stars={false}/>
         <CourceHead />
       </Container>
       {courceData.map((item, index) => {
