@@ -1,13 +1,11 @@
 import React from 'react'
-import { Row, Col } from 'react-bootstrap'
-import HeaderIMG from './HeaderIMG'
 import TextOpacityBG from './TextOpacityBG'
 import "./components.scss"
 import SUB from "../assets/header-sub.png";
 import ButtonBase from './ButtonBase'
 import ROTATE from "../assets/heading-vec.svg"
-import BGCompo from './BGCompo'
 import { SocialLinks } from '../data/data'
+import HeaderBase from './HeaderBase'
 
 const Header = () => {
   return (
@@ -23,6 +21,7 @@ const Header = () => {
         </h1>
         <div>
           <img src={SUB} alt="" />
+          <p>Learning is an essential part of life; education helps us understand and prepare for the future. That's why we provide quality education of your children.</p>
         </div>
       </div>
       <ButtonBase title={"Join With Us"} href={`tel:${SocialLinks.tel}`} />
@@ -32,22 +31,7 @@ const Header = () => {
 
 function HomeHead() {
   return (
-    <Row className='main-bg' style={{
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      zIndex: "1",
-      paddingTop: "8rem"
-    }}>
-    {/* <img src={MAINBG} className="main-bg-img" /> */}
-    <BGCompo />
-      <Col sm={{ span: 12, order: "last" }} md={5} >
-        <HeaderIMG />
-      </Col>
-      <Col sm={{ span: 12, order: 'first' }} md={5}>
-        <Header />
-      </Col>
-    </Row>
+    <HeaderBase Header={Header} />
   )
 }
 

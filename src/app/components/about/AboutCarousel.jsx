@@ -1,12 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, {useState, useEffect, useRef } from 'react'
 import { Carousel } from 'react-bootstrap'
 
-import SQ from "../assets/pic-sq.svg";
+import Pagination from '../Pagination';
+import "../components.scss"
 
-import "./components.scss"
-import Pagination from './Pagination'
-
-function HeaderIMG({data}) {
+function AboutCarousel({data}) {
     const [currPage, setCurrPage] = useState(0);
     const [totalPages, setTotalPages] = useState(0);
     const [imageData, setImageData] = useState([]);
@@ -42,12 +40,13 @@ function HeaderIMG({data}) {
         <div className='carousel-main' style={{
 
         }}>
-            <img src={SQ} className='ellipse' />
+            {/* <img src={SQ} className='ellipse' /> */}
             <Carousel
                 ref={currRef}
                 onSlide={(e) => setCurrPage(e + 1)}
                 fade
-                className='carousel-container'
+                id='about-carousel'
+                // className='carousel-container'
                 indicators={false}
                 prevIcon={<div></div>}
                 nextIcon={<div></div>}>
@@ -55,7 +54,8 @@ function HeaderIMG({data}) {
             </Carousel>
             <Pagination currPage={currPage} totalPages={totalPages} next={handleNext} prev={handlePrev} />
         </div>
+
     )
 }
 
-export default HeaderIMG
+export default AboutCarousel
