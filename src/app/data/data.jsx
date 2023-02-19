@@ -57,6 +57,30 @@ const HomeCarouselImage = [
 /*                              CAME FROM SERVER                              */
 /* -------------------------------------------------------------------------- */
 
+const CriteriaData = [
+  {
+    title: "Who will be teaching you once you join the academy?",
+    desc: "At Persistance we provide you with the list of the faculties who will be taking your lectures. Sometimes such a list is not even shown in the brochure & on the website!"
+  },
+  {
+    title: "Expertise, experience and qualification of Faculty Team.",
+    desc: "The most important criteria to judge the credibility of any educational institute is the competency of the faculty team. Branding and advertising should not affect your decision. At persistence you are taught by IIT Bombay Faculty."
+  },
+  {
+    title: "Percent result of the institute.",
+    desc: "Another extremely important factor, which is usually ignored, is the percentage of IITians produced which increases the morale of the student. At Persistence the core team has been consistent since the very beginning.At national level there happens 1 admission out of 20 but at PERSISTENCE we achived the remarkable feat of 1 admission out of 2 due to the combined efforts of our students."
+  },
+  {
+    title: "Number of IIT rankers taught by faculty.",
+    desc: "There may be institutes that have a long list of successful candidates in the past which was due to a set of faculty, who may not be working with them any more to teach you. It is basically the faculty team which is responsible for the results achieved by any institute and not the institute’s brand name.At PERSISTENCE ,same faculty has been teaching ever since its inception."
+  },
+  {
+    title: "Commuting Time & institute infrastructure.",
+    desc: "The self study slots which are unique to PERSISTENCE helps you to save enormous time which you would have spent on travelling."
+  },
+]
+
+
 const CourceData = [
   {
     title: "One Year Program",
@@ -131,4 +155,4 @@ const SocialLinks = {
   tel: "+917488408051",
 };
 
-export { SitePages, ProgramData, OurResultsData, CourceData, HomeCards, HomeCarouselImage, SocialLinks };
+export { SitePages, ProgramData, CriteriaData, OurResultsData, CourceData, HomeCards, HomeCarouselImage, SocialLinks };
