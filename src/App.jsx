@@ -4,6 +4,8 @@ import { Container } from 'react-bootstrap'
 import MainNavbar from './app/components/navbar/MainNavbar'
 import Footer from './app/components/Footer'
 import Home from './app/pages/Home'
+import AboutUS from './app/pages/AboutUS'
+import OurCources from './app/pages/OurCources'
 
 
 function App() {
@@ -15,15 +17,15 @@ function App() {
         }}>
           <MainNavbar />
           <Switch>
-            <Route path="/" >
+            <Route path={["/persistanceEdu", "/persistanceEdu/home", "/home"]} exact>
               <Home />
             </Route>
-            {/* <Route path="/persistanceEdu/" exact>
-              <Home />
-            </Route>
-            <Route path="/persistanceEdu/about">
+            <Route path={["/persistanceEdu/about", "/about"]} exact>
               <AboutUS />
-            </Route> */}
+            </Route>
+            <Route path={["/persistanceEdu/cources", "/cources"]} exact>
+              <OurCources />
+            </Route>
           </Switch>
           <Footer />
         </Container>

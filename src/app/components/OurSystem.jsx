@@ -29,7 +29,7 @@ function OurSystem() {
     return (
         <Row style={{
             backgroundColor: "white",
-        }}>
+        }} className="pt-5">
             <Col xs={12}>
                 <SectionHeading title={"Our System"} />
             </Col>

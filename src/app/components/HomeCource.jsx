@@ -13,9 +13,7 @@ function HomeCource() {
     }, [])
 
     return (
-        <Row style={{
-            marginTop: "2rem"
-        }}>
+        <Row className='pt-5'>
             <Row style={{
                 alignItems: "center",
                 marginBottom: "1rem",
@@ -39,7 +37,6 @@ function HomeCource() {
                         }}>
                             <HomeCourceCard title={item.title} content={item.content} href="http://www.google.com" />
                         </Col>))}
-
                 </Row>
             </Col>
         </Row>

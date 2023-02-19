@@ -6,7 +6,6 @@ import HCardsCompo from '../components/HCardsCompo'
 import OurResults from '../components/OurResults'
 import OurSystem from '../components/OurSystem'
 import HomeCource from '../components/HomeCource'
-import AboutHeader from '../components/about/AboutHeader'
 
 function Home() {
     return (
@@ -15,8 +14,7 @@ function Home() {
                 padding: "0",
                 margin: "0",
             }}>
-                {/* <HomeHead /> */}
-                <AboutHeader/>
+                <HomeHead />
             </Container>
             <HCardsCompo/>
             <OurResults/>

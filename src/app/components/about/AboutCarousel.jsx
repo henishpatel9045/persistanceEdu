@@ -18,8 +18,6 @@ function AboutCarousel({data}) {
         setCurrPage(1);
     }, [])
 
-    console.log(imageData);
-
     const currRef = useRef(null);
 
     const handleNext = () => {

@@ -13,7 +13,7 @@ function OurResults() {
     }, [])
 
     return (
-        <Row className='our-results-main p-0'>
+        <Row className='our-results-main p-0 pt-5'>
             <Col xs={12}>
                 <SectionHeading title={"Our Results"} />
             </Col>

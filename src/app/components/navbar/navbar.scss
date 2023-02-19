@@ -18,14 +18,15 @@
   padding: 10px 20px;
   font-size: 1rem;
   font-weight: 400;
-  cursor: pointer;
   transition: all 0.2s ease-out;
   &:hover {
+    cursor: pointer;
     @include link-box-mixin;
   }
 }
 
 .link-selected {
+  transition: all 0.2s ease-out;
   @include link-box-mixin;
 }
 
@@ -42,7 +43,7 @@
   z-index: 0;
   background-color: $primary-main;
   background: transparent;
-  padding: 0 3rem !important;  
+  padding: 0 3rem !important;
 
   @media (max-width: 768px) {
     padding: 0 1rem !important;
@@ -54,7 +55,7 @@
   border: #ffffffc0;
   outline: none;
 
-  span{
+  span {
     filter: brightness(0) invert(1);
   }
 }
