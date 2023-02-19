@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap'
 
 import CourceHead from '../components/cources/CourceHead'
 import CourceSection from '../components/cources/CourceSection'
+import MainBG from '../components/MainBG'
 import { CourceData } from '../data/data'
 
 function OurCources() {
@@ -18,6 +19,7 @@ function OurCources() {
         padding: "0",
         margin: "0",
       }}>
+        <MainBG/>
         <CourceHead />
       </Container>
       {courceData.map((item, index) => {

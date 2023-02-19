@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom'
 
 import { Container } from 'react-bootstrap'
 import MainNavbar from './app/components/navbar/MainNavbar'
@@ -20,12 +20,13 @@ function App() {
             <Route path={["/", "/home"]} exact>
               <Home />
             </Route>
-            <Route path={["/about/"]} exact>
+            <Route path={["/about"]} exact>
               <AboutUS />
             </Route>
-            <Route path={["/cources/"]} exact>
+            <Route path={["/cources"]} exact>
               <OurCources />
             </Route>
+            <Redirect to="/" />
           </Switch>
           <Footer />
         </Container>
