@@ -96,10 +96,10 @@ const OurResultsData = [
 ]
 
 const SocialLinks = {
-  fb: "https://facebook.com",
-  yt: "https://youtube.com",
-  map: "https://google.com",
-  tel: "+917990577979",
+  fb: "https://www.facebook.com/persistenceranchi",
+  yt: "https://www.youtube.com/channel/UCOEex53MPQT1vgkzEVbQs0A/featured",
+  map: "https://goo.gl/maps/xjxFm2FDTpq3pnzV7",
+  tel: "+917488408051",
 };
 
 export { SitePages, ProgramData, OurResultsData, HomeCards, HomeCarouselImage, SocialLinks };

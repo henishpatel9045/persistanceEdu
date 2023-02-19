@@ -1,12 +1,13 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
 import HeaderIMG from './HeaderIMG'
 import TextOpacityBG from './TextOpacityBG'
 import "./components.scss"
 import SUB from "../assets/header-sub.png";
 import ButtonBase from './ButtonBase'
-import MAINBG from "../assets/main-bg.png"
-import { useMedia } from 'use-media'
+import ROTATE from "../assets/heading-vec.svg"
+import BGCompo from './BGCompo'
+import { SocialLinks } from '../data/data'
 
 const Header = () => {
   return (
@@ -18,12 +19,13 @@ const Header = () => {
           Getting <TextOpacityBG left={true}>Quality</TextOpacityBG> <br />
           <TextOpacityBG>Education</TextOpacityBG> is now <br />
           more easy with us. <br />
+          <img src={ROTATE} className="heading-pic" />
         </h1>
         <div>
           <img src={SUB} alt="" />
         </div>
       </div>
-      <ButtonBase title={"Join With Us"} />
+      <ButtonBase title={"Join With Us"} href={`tel:${SocialLinks.tel}`} />
     </div>
   )
 }
@@ -37,11 +39,12 @@ function HomeHead() {
       zIndex: "1",
       paddingTop: "8rem"
     }}>
-    <img src={MAINBG} className="main-bg-img" />
-      <Col sm={{ span: 12, order: "last" }} md={4} >
+    {/* <img src={MAINBG} className="main-bg-img" /> */}
+    <BGCompo />
+      <Col sm={{ span: 12, order: "last" }} md={5} >
         <HeaderIMG />
       </Col>
-      <Col sm={{ span: 12, order: 'first' }} md={6}>
+      <Col sm={{ span: 12, order: 'first' }} md={5}>
         <Header />
       </Col>
     </Row>

@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Carousel } from 'react-bootstrap'
 
+import SQ from "../assets/pic-sq.svg";
+
 import "./components.scss"
 import Pagination from './Pagination'
 
@@ -42,6 +44,7 @@ function HeaderIMG() {
         <div className='carousel-main' style={{
 
         }}>
+            <img src={SQ} className='ellipse' />
             <Carousel
                 ref={currRef}
                 onSlide={(e) => setCurrPage(e + 1)}

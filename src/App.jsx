@@ -1,12 +1,9 @@
-import { BrowserRouter, Route, Switch, Link, Redirect } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-import { Container, NavItem, Row } from 'react-bootstrap'
-import HomeHead from './app/components/HomeHead'
+import { Container } from 'react-bootstrap'
 import MainNavbar from './app/components/navbar/MainNavbar'
-import MAINBG from "./app/assets/main-bg.png"
 import Footer from './app/components/Footer'
 import Home from './app/pages/Home'
-import AboutUS from './app/pages/AboutUS'
 
 
 function App() {
@@ -18,17 +15,16 @@ function App() {
         }}>
           <MainNavbar />
           <Switch>
-            <Route path="/persistanceEdu/home" exact>
+            <Route path="/" >
               <Home />
             </Route>
-            <Route path="/persistanceEdu/" exact>
+            {/* <Route path="/persistanceEdu/" exact>
               <Home />
             </Route>
-            <Route path="/about">
+            <Route path="/persistanceEdu/about">
               <AboutUS />
-            </Route>
+            </Route> */}
           </Switch>
-          <AboutUS />
           <Footer />
         </Container>
       </div>

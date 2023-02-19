@@ -41,7 +41,7 @@ function MainNavbar() {
           zIndex: 15,
           position: "absolute",
           top: 0,
-          left: 0
+          left: 0,
         }} >
           <Container fluid style={{
             paddingLeft: "2.5rem"

@@ -16,15 +16,20 @@ function HomeCource() {
         <Row style={{
             marginTop: "2rem"
         }}>
-            <Col xs={12}>
-                <SectionHeading title={"Program IIT-JEE + NEET"} />
-            </Col>
+            <Row style={{
+                alignItems: "center",
+                marginBottom: "1rem",
+                width: "100%",
+                position: "relative",
+            }} > 
+                <Col md={12} xs={12}>
+                    <SectionHeading title={"Program IIT-JEE + NEET"} />
+                </Col>
+                <Col md={2} xs={12}>
+                    <CallBtnHome tel={SocialLinks.tel} />
+                </Col>
+            </Row>
             <Col xs={12} >
-                <Row>
-                    <Col xs={12}>
-                        <CallBtnHome tel={SocialLinks.tel}/>
-                    </Col>
-                </Row>
                 <Row className='p-5' style={{
                     rowGap: "1rem"
                 }}>

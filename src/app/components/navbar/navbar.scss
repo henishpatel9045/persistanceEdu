@@ -42,8 +42,11 @@
   z-index: 0;
   background-color: $primary-main;
   background: transparent;
+  padding: 0 3rem !important;  
 
-  
+  @media (max-width: 768px) {
+    padding: 0 1rem !important;
+  }
 }
 
 #nav-toggle-btn {

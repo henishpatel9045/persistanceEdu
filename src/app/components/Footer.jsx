@@ -10,7 +10,7 @@ import IconLink from './IconLink';
 import { Link } from 'react-router-dom';
 
 const MapBtn = ({ href }) => {
-    return <a href={href} className="footer-map-link">
+    return <a href={href} target="_blank" className="footer-map-link">
         <img src={MAP} alt="Map" />
         <span>Location On Map</span>
     </a>

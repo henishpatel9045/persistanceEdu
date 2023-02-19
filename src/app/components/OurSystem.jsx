@@ -28,7 +28,7 @@ function OurSystem() {
 
     return (
         <Row style={{
-            backgroundColor: "white"
+            backgroundColor: "white",
         }}>
             <Col xs={12}>
                 <SectionHeading title={"Our System"} />
@@ -40,9 +40,9 @@ function OurSystem() {
                         : <>
                             <img src={S1} alt="" />
                             <CardDivider />
-                            <img src={S2} alt="" />
-                            <CardDivider />
                             <img src={S3} alt="" />
+                            <CardDivider />
+                            <img src={S2} alt="" />
                             <CardDivider />
                             <img src={S4} alt="" />
                             <CardDivider />

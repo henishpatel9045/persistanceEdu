@@ -2,9 +2,9 @@ import React from 'react'
 import "./components.scss"
 
 
-function ButtonBase({ title, onClick = () => console.log() }) {
+function ButtonBase({ title, href }) {
   return (
-    <button className="primary-btn" onClick={onClick} >{title}</button>
+    <a className="primary-btn" href={href} >{title}</a>
   )
 }
 
