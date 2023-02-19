@@ -28,8 +28,7 @@ function MainNavbar() {
       href: "testimonials"
     },
   ]
-  let currPath = useLocation().pathname?.replace("/persistanceEdu/", "");
-  currPath = currPath.replace("/", "")
+  let currPath = useLocation().pathname?.replace("/", "");
   if (currPath == ""){
     currPath = "home"
   }

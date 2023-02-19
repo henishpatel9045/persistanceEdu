@@ -17,13 +17,13 @@ function App() {
         }}>
           <MainNavbar />
           <Switch>
-            <Route path={["/persistanceEdu", "/persistanceEdu/home", "/home"]} exact>
+            <Route path={["/", "/home"]} exact>
               <Home />
             </Route>
-            <Route path={["/persistanceEdu/about", "/about"]} exact>
+            <Route path={["/about/"]} exact>
               <AboutUS />
             </Route>
-            <Route path={["/persistanceEdu/cources", "/cources"]} exact>
+            <Route path={["/cources/"]} exact>
               <OurCources />
             </Route>
           </Switch>

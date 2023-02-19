@@ -1,9 +1,13 @@
 {
   "name": "persistanceedu",
   "private": true,
+  "author": {
+    "name": "Henish Patel",
+    "email": "henishpatel9045@gmail.com"
+  },
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://henishpatel9045.github.io/persistanceEdu/",
+  "homepage": ".",
   "scripts": {
     "dev": "vite",
     "deploy": "gh-pages -d dist",
