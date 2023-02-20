@@ -148,6 +148,27 @@ const OurResultsData = [
   },
 ]
 
+const AchievementsData = [
+  {
+    "title": "Best Rank Ankit Jhaair - 110",
+  },
+  {
+    "title": "Shreeya Singh Girls Topper Of Jharkhand",
+  },
+  {
+    "title": "Prabhat Kumar Qualified IIT,AIIMS NEET Finally Studying In IIT Bombay",
+  },
+  {
+    "title": "100% Qualification In NEET",
+  },
+  {
+    "title": "Mohit Kumar Joined AIIMS Patana",
+  },
+  {
+    "title": "Mentored More Than 1000 IITIANS",
+  },
+]
+
 const SocialLinks = {
   fb: "https://www.facebook.com/persistenceranchi",
   yt: "https://www.youtube.com/channel/UCOEex53MPQT1vgkzEVbQs0A/featured",
@@ -155,4 +176,4 @@ const SocialLinks = {
   tel: "+917488408051",
 };
 
-export { SitePages, ProgramData, CriteriaData, OurResultsData, CourceData, HomeCards, HomeCarouselImage, SocialLinks };
+export { SitePages, ProgramData, AchievementsData, CriteriaData, OurResultsData, CourceData, HomeCards, HomeCarouselImage, SocialLinks };

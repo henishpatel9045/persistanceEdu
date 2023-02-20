@@ -819,3 +819,28 @@ $full: 100vh;
     margin-top: 1rem !important;
   }
 }
+
+
+/* ------------------------------ ACHIEVEMENTS ------------------------------ */
+
+.a-card{
+  width: 100%;
+  height: 5rem;
+  border: 1px solid $primary-main;
+  border-left-width: .5rem;
+  border-radius: 0.8rem;
+  // background-color: $primary-main;
+  padding: .5rem;
+
+  span{
+    padding: .5rem;
+    border-radius: .5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    background-color: #FFF;
+    color: $primary-main;
+  }
+}

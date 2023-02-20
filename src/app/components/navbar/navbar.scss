@@ -41,12 +41,26 @@
 .navbar-main {
   width: 100vw;
   z-index: 0;
-  background-color: $primary-main;
   background: transparent;
   padding: 0 3rem !important;
+  padding-bottom: .5rem;
 
   @media (max-width: 768px) {
     padding: 0 1rem !important;
+    padding-bottom: .5rem;
+  }
+}
+
+.navbar-main-color {
+  width: 105vw;
+  z-index: 0;
+  background: $primary-main;
+  padding: 0 3rem !important;
+  padding-bottom: .5rem;
+
+  @media (max-width: 768px) {
+    padding: 0 1rem !important;
+    padding-bottom: .5rem;
   }
 }
 

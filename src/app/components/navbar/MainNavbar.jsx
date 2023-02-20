@@ -29,23 +29,28 @@ function MainNavbar() {
     },
   ]
   let currPath = useLocation().pathname?.replace("/", "");
-  if (currPath == ""){
+  if (currPath == "") {
     currPath = "home"
   }
 
+  const bgTransparent = (currPath?.includes("home") || currPath?.includes("about") || currPath?.includes("cources")) ?
+    true : false;
+
   return (
-    <Row >
+    <Row className='d-flex align-items-center justify-content-center'>
       <Col xs={12} style={{
         padding: 0,
-        position: "relative"
+        position: "relative",
+        backgroundColor: "red"
       }}>
-        <Navbar collapseOnSelect expand="lg" className='navbar-main' style={{
-          backgroundColor: "rgba(255,255,255,0.0)",
-          zIndex: 15,
-          position: "absolute",
-          top: 0,
-          left: 0,
-        }} >
+        <Navbar collapseOnSelect expand="lg" className={bgTransparent
+          ? 'navbar-main'
+          : 'navbar-main-color'} style={{
+            zIndex: 15,
+            position: "absolute",
+            top: 0,
+            left: 0,
+          }} >
           <Container fluid style={{
             paddingLeft: "2.5rem"
           }}>
@@ -57,11 +62,11 @@ function MainNavbar() {
               <Nav>
                 {
                   items.map((item, index) => (
-                    <Link to={item.href} style={{
+                    <Link key={index} to={item.href} style={{
                       marginTop: "1rem"
                     }}><Nav.Link bsPrefix={currPath == item.href
-                    ? 'nav-btn link-selected' 
-                    : 'nav-btn'} key={index} href={item.href}>{item.title}</Nav.Link></Link>
+                      ? 'nav-btn link-selected'
+                      : 'nav-btn'} href={item.href}>{item.title}</Nav.Link></Link>
                   ))
                 }
               </Nav>

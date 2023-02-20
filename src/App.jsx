@@ -6,6 +6,7 @@ import Footer from './app/components/Footer'
 import Home from './app/pages/Home'
 import AboutUS from './app/pages/AboutUS'
 import OurCources from './app/pages/OurCources'
+import Achievements from './app/pages/Achievements'
 
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
             </Route>
             <Route path={["/cources"]} exact>
               <OurCources />
+            </Route>
+            <Route path={["/achievements"]} exact>
+              <Achievements />
             </Route>
             <Redirect to="/" />
           </Switch>

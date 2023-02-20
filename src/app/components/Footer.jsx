@@ -36,7 +36,7 @@ function Footer() {
                     <Row>
                         {SitePages.map((item, ind) => {
                             return <Col lg="auto" xs={6}  key={ind} >
-                                <Link to={item.href}><a className='footer-nav-link' href={item.href}>{item.title}</a></Link>
+                                <Link to={item.href} ><a className='footer-nav-link' href={item.href}>{item.title}</a></Link>
                             </Col>
                         })}
                     </Row>
