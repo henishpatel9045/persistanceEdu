@@ -91,19 +91,29 @@
 /* -------------------------------------------------------------------------- */
 
 .carousel-container {
-  width: 22rem !important;
-  height: 25rem !important;
+  width: 25vw;
+  height: 55vh;
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.2);
   overflow: hidden;
   padding-left: 1rem;
   padding-bottom: 1rem;
   box-shadow: -1px 1px 2px 0px rgba(255, 255, 255, 0.8);
+
+  @media (max-width: 768px) {
+    width: 90vw !important;
+    height: 55vh !important;
+    border-radius: 15%;
+    overflow: hidden;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    align-self: center;
+  }
 }
 
 #about-carousel {
   width: 100% !important;
-  height: 20rem !important;
+  height: 50vh;
   border-radius: 20px;
   overflow: hidden;
   padding: 0;
@@ -120,20 +130,28 @@
 
   @media (max-width: 768px) {
     max-width: 80% !important;
-    height: 15rem !important;
+    height: 12rem !important;
   }
 }
 
 /* ----------------------------- CAROUSEL IMAGE ----------------------------- */
 
 .carousel-img {
-  width: 21rem;
-  height: 24rem;
+  width: calc(25vw - 1rem);
+  height: calc(55vh - 1rem);
   object-fit: cover;
   border-radius: 50px;
   resize: both;
   display: block;
   z-index: 500;
+
+  @media (max-width: 768px) {
+    width: calc(90vw - 1rem) !important;
+    height: calc(55vh - 1rem) !important;
+    object-fit: cover; 
+    border-radius: 15%;
+    resize: both;
+  }
 }
 
 .carousel-main {
@@ -159,23 +177,8 @@
       z-index: 1;
     }
   }
-}
 
-/* --------------------------- MEDIA FOR CAROUSEL --------------------------- */
-
-@media (max-width: 768px) {
-  .carousel-container {
-    width: 20rem !important;
-    height: 22rem !important;
-    border-radius: 15%;
-    overflow: hidden;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-    align-self: center;
-    // margin-left: calc(50vw - 10rem);
-  }
-
-  .carousel-main {
+  @media (max-width: 768px) {
     width: 100vw;
 
     .ellipse {
@@ -186,14 +189,6 @@
       left: calc(50vw - 12rem);
       z-index: 0 !important;
     }
-  }
-
-  .carousel-img {
-    width: 19rem;
-    height: 21rem;
-    object-fit: cover;
-    border-radius: 15%;
-    resize: both;
   }
 }
 
@@ -692,27 +687,27 @@ $full: 100vh;
     }
   }
 
-  p:nth-child(2){
+  p:nth-child(2) {
     text-align: end;
     color: $primary-main;
   }
 }
 
-.about-us-content{
+.about-us-content {
   align-items: center;
   justify-content: center;
   padding: 1rem 1rem;
 
-  *{
-    h4{
+  * {
+    h4 {
       color: $primary-main;
     }
-    p{
-      color: #3D3D3D;
+    p {
+      color: #3d3d3d;
     }
   }
 
-  .image{
+  .image {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -722,7 +717,7 @@ $full: 100vh;
     overflow: hidden;
     align-items: center;
 
-    img{
+    img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -730,33 +725,33 @@ $full: 100vh;
     }
 
     @media (max-width: 768px) {
-      img{
+      img {
         width: 80vw;
       }
     }
 
-    div{
+    div {
       text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      row-gap: 0;      
+      row-gap: 0;
     }
   }
 
-  .content{
-    p{
+  .content {
+    p {
       text-align: justify;
     }
 
-    h4{
+    h4 {
       font-size: 1.4rem;
       font-weight: 400;
     }
 
     @media (max-width: 768px) {
       padding-top: 2rem;
-      h4{
+      h4 {
         text-align: center;
       }
     }
@@ -765,12 +760,12 @@ $full: 100vh;
 
 /* ------------------------------- OUR COURCES ------------------------------ */
 
-.cources-head{
+.cources-head {
   align-items: center;
   width: 100vw !important;
   justify-content: space-around;
 
-  p{
+  p {
     margin-top: 2rem;
     text-align: center;
     font-size: 1rem;
@@ -782,17 +777,17 @@ $full: 100vh;
     }
   }
 
-  div{
+  div {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;   
+    width: 100vw;
     position: relative;
 
-    h1{
+    h1 {
       font-size: 2rem;
     }
-    img{
+    img {
       width: 3rem;
       height: 3rem;
       justify-self: flex-start !important;
@@ -802,12 +797,12 @@ $full: 100vh;
       left: 10%;
     }
 
-    @media (max-width: 768px) {      
-      h1{
+    @media (max-width: 768px) {
+      h1 {
         text-align: center;
       }
 
-      img{
+      img {
         position: relative !important;
         top: 0;
         left: 0;
@@ -816,10 +811,9 @@ $full: 100vh;
       }
     }
   }
- }
+}
 
-
-.cource-content{
+.cource-content {
   text-align: justify;
   @media (max-width: 768px) {
     margin-top: 1rem !important;

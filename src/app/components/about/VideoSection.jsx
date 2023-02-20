@@ -18,7 +18,7 @@ function VideoSection() {
                         width: "100%",
                         height: isSM
                             ? "15rem"
-                            : "30rem"
+                            : "60vh"
                     }}
                     src="https://www.youtube.com/embed/NBwOIj5Q7GI"
                     title="Persistence Education"

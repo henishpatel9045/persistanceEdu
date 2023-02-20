@@ -38,13 +38,11 @@ function AboutCarousel({data}) {
         <div className='carousel-main' style={{
 
         }}>
-            {/* <img src={SQ} className='ellipse' /> */}
             <Carousel
                 ref={currRef}
                 onSlide={(e) => setCurrPage(e + 1)}
                 fade
                 id='about-carousel'
-                // className='carousel-container'
                 indicators={false}
                 prevIcon={<div></div>}
                 nextIcon={<div></div>}>
