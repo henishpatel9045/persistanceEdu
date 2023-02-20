@@ -1,6 +1,8 @@
 import ONEY from "../assets/one-year.png"
 import TWOY from "../assets/two-year.png"
 import FOUND from "../assets/foundation.png"
+import AR1 from "../assets/aResults-1.png"
+import AR2 from "../assets/aResults-2.png"
 
 /* -------------------------------------------------------------------------- */
 /*                                   KEEPERS                                  */
@@ -169,6 +171,63 @@ const AchievementsData = [
   },
 ]
 
+const AResultsData = [
+  {
+    title: "Top Performers of PERSISTENCE",
+    subtitle: "The Best Percentage Result In Jharkhand Since 2009",
+    data: [
+      {
+        image: AR1,
+        name: "Shreeya",
+        title: "IIT Bombay",
+        subtitle: ""
+      },
+      {
+        image: AR2,
+        name: "Nitin Kumar",
+        title: "IIT Kanpur",
+        subtitle: "Mob: 735221076"
+      },
+      {
+        image: AR1,
+        name: "Akhil Amod",
+        title: "IIT Kanpur",
+        subtitle: "Mob: 8454952208"
+      },
+      {
+        image: AR1,
+        name: "Ankit Akash",
+        title: "IIT Delhi",
+        subtitle: "Mob: 9386588908"
+      },
+      {
+        image: AR2,
+        name: "Srishti Prasad",
+        title: "Dr. RMLIMS Lucknow AIIMS, NEET & JEE MAINS Qlf.",
+        subtitle: ""
+      },
+      {
+        image: AR1,
+        name: "Nitish Kumar",
+        title: "IIT Kharangpur",
+        subtitle: "Mob: 6201438013"
+      },
+      {
+        image: AR1,
+        name: "Devesh",
+        title: "IIT Bombay",
+        subtitle: "Mob: 8454953645"
+      },
+      {
+        image: AR1,
+        name: "Ayush Sahu",
+        title: "IIT Bombay",
+        subtitle: "Mob: 9102766677"
+      }
+    ]
+  }
+]
+
 const SocialLinks = {
   fb: "https://www.facebook.com/persistenceranchi",
   yt: "https://www.youtube.com/channel/UCOEex53MPQT1vgkzEVbQs0A/featured",
@@ -176,4 +235,4 @@ const SocialLinks = {
   tel: "+917488408051",
 };
 
-export { SitePages, ProgramData, AchievementsData, CriteriaData, OurResultsData, CourceData, HomeCards, HomeCarouselImage, SocialLinks };
+export { SitePages, AResultsData, ProgramData, AchievementsData, CriteriaData, OurResultsData, CourceData, HomeCards, HomeCarouselImage, SocialLinks };
