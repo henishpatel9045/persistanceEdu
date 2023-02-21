@@ -2,27 +2,24 @@
 
 /* --------------------------------- MAIN BG -------------------------------- */
 
-.main-bg {
-  background: linear-gradient(107.74deg, #1681ab -1.72%, #09749e 102.41%);
+@mixin main-bg-mixin{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   // height: 100vh;
-  width: 100vw !important;
+  width: 105vw !important;
   position: relative;
   overflow: hidden;
   padding-bottom: 4rem;
 }
 
+.main-bg {
+  @include main-bg-mixin();
+  background: linear-gradient(107.74deg, #1681ab -1.72%, #09749e 102.41%);
+}
+
 .main-bg-trans{
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  // height: 100vh;
-  width: 100vw !important;
-  position: relative;
-  overflow: hidden;
-  padding-bottom: 4rem;
+  @include main-bg-mixin();
 }
 
 .main-bg-img {
@@ -124,12 +121,12 @@
 }
 
 #about-carousel {
-  width: 100% !important;
+  width: 80% !important;
   height: 50vh;
   border-radius: 20px;
   overflow: hidden;
   padding: 0;
-
+  
   .carousel-img {
     width: 100% !important;
     height: 100% !important;

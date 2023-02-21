@@ -29,7 +29,7 @@ function HeaderBase({Header, stars=true, about=false, bg=false, style={}}) {
         <Col sm={{ span: 12, order: "last" }} md={6} >
           {about ? <AboutCarousel data={HomeCarouselImage} /> : <HeaderIMG data={HomeCarouselImage} />}
         </Col>
-        <Col sm={{ span: 12, order: 'first' }} md={6}>
+        <Col sm={{ span: 12, order: 'first' }} md={about ? 5 : 6}>
           <Header />
         </Col>
       </Row>
