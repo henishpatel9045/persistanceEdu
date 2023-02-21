@@ -4,30 +4,10 @@ import "./navbar.scss";
 import LOGO from "../../assets/Logo.svg";
 import { useMedia } from 'use-media';
 import { Link, useLocation } from 'react-router-dom';
+import {SitePages} from "../../data/data"
 
 function MainNavbar() {
-  const items = [
-    {
-      title: 'Home',
-      href: "home"
-    },
-    {
-      title: 'About Us',
-      href: "about"
-    },
-    {
-      title: 'Our Cources',
-      href: "cources"
-    },
-    {
-      title: 'Achievements & Results',
-      href: "achievements"
-    },
-    {
-      title: 'Students Testimonials',
-      href: "testimonials"
-    },
-  ]
+  const items = SitePages;
   let currPath = useLocation().pathname?.replace("/", "");
   if (currPath == "") {
     currPath = "home"

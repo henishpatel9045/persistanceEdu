@@ -29,6 +29,14 @@ const SitePages = [
     title: "Students Testimonials",
     href: "testimonials",
   },
+  {
+    title: "Contact Us",
+    href: "contact",
+  },
+  {
+    title: "FAQ",
+    href: "faq",
+  },
 ];
 
 
