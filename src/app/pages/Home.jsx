@@ -10,7 +10,7 @@ import HomeCource from '../components/HomeCource'
 function Home() {
     return (
         <>
-            <Container fluid className='main-bg' style={{
+            <Container fluid className='main-bg-trans' style={{
                 padding: "0",
                 margin: "0",
             }}>

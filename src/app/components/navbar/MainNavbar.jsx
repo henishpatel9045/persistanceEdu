@@ -33,15 +33,19 @@ function MainNavbar() {
     currPath = "home"
   }
 
-  const bgTransparent = (currPath?.includes("home") || currPath?.includes("about") || currPath?.includes("cources")) ?
+  const bgTransparent = currPath?.includes("home") ?
     true : false;
+
+  const isSM = useMedia({maxWidth: "768px"})
 
   return (
     <Row className='d-flex align-items-center justify-content-center'>
       <Col xs={12} style={{
         padding: 0,
         position: "relative",
-        backgroundColor: "red"
+        backgroundColor: "red",
+        paddingLeft: isSM ? 0 : "4rem",
+        paddingRight: isSM ? 0 : "4rem",
       }}>
         <Navbar collapseOnSelect expand="lg" className={bgTransparent
           ? 'navbar-main'

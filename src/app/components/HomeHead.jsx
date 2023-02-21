@@ -31,7 +31,7 @@ const Header = () => {
 
 function HomeHead() {
   return (
-    <HeaderBase Header={Header} />
+    <HeaderBase Header={Header} bg={true}/>
   )
 }
 

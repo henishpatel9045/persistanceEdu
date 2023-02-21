@@ -225,6 +225,114 @@ const AResultsData = [
         subtitle: "Mob: 9102766677"
       }
     ]
+  },
+  {
+    title: "11 Students Qualified out of 41 in JEE Advanced - 2019",
+    subtitle: "",
+    data: [
+      {
+        image: AR1,
+        name: "Shreeya",
+        title: "IIT Bombay",
+        subtitle: ""
+      },
+      {
+        image: AR2,
+        name: "Nitin Kumar",
+        title: "IIT Kanpur",
+        subtitle: "Mob: 735221076"
+      },
+      {
+        image: AR1,
+        name: "Akhil Amod",
+        title: "IIT Kanpur",
+        subtitle: "Mob: 8454952208"
+      },
+      {
+        image: AR1,
+        name: "Ankit Akash",
+        title: "IIT Delhi",
+        subtitle: "Mob: 9386588908"
+      },
+      {
+        image: AR2,
+        name: "Srishti Prasad",
+        title: "Dr. RMLIMS Lucknow AIIMS, NEET & JEE MAINS Qlf.",
+        subtitle: ""
+      },
+      {
+        image: AR1,
+        name: "Nitish Kumar",
+        title: "IIT Kharangpur",
+        subtitle: "Mob: 6201438013"
+      },
+      {
+        image: AR1,
+        name: "Devesh",
+        title: "IIT Bombay",
+        subtitle: "Mob: 8454953645"
+      },
+      // {
+      //   image: AR1,
+      //   name: "Ayush Sahu",
+      //   title: "IIT Bombay",
+      //   subtitle: "Mob: 9102766677"
+      // }
+    ]
+  },
+  {
+    title: "16 Students out of 50 got more than 95% in JEE Mains - 2019",
+    subtitle: "",
+    data: [
+      {
+        image: AR1,
+        name: "Shreeya",
+        title: "IIT Bombay",
+        subtitle: ""
+      },
+      {
+        image: AR2,
+        name: "Nitin Kumar",
+        title: "IIT Kanpur",
+        subtitle: "Mob: 735221076"
+      },
+      {
+        image: AR1,
+        name: "Akhil Amod",
+        title: "IIT Kanpur",
+        subtitle: "Mob: 8454952208"
+      },
+      {
+        image: AR1,
+        name: "Ankit Akash",
+        title: "IIT Delhi",
+        subtitle: "Mob: 9386588908"
+      },
+      {
+        image: AR2,
+        name: "Srishti Prasad",
+        title: "Dr. RMLIMS Lucknow AIIMS, NEET & JEE MAINS Qlf.",
+        subtitle: ""
+      },
+      {
+        image: AR1,
+        name: "Nitish Kumar",
+        title: "IIT Kharangpur",
+        subtitle: "Mob: 6201438013"
+      },
+      {
+        image: AR1,
+        name: "Devesh",
+        title: "IIT Bombay",
+        subtitle: "Mob: 8454953645"
+      },
+      {
+        image: AR1,
+        name: "Ayush Sahu",
+        title: "IIT Bombay",
+        subtitle: "Mob: 9102766677"
+      }
+    ]
   }
 ]
 

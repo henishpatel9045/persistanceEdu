@@ -14,10 +14,10 @@ function CourceHead() {
                 }}>
                     <div>
                         <img src={COMA} alt="coma svg" className='coma' />
-                        <h1>
-                            <TextOpacityBG left={true} className="pt-2 pb-2 ps-2" style={{ paddingLeft: "2rem" }}>
+                        <h1 className="pt-2 ps-2" style={{ paddingLeft: "2rem" }}>
+                            {/* <TextOpacityBG left={true} className="pt-2 pb-2 ps-2" style={{ paddingLeft: "2rem" }}> */}
                                 Your Success, <wbr></wbr>Our Passion!!
-                            </TextOpacityBG>
+                            {/* </TextOpacityBG> */}
                         </h1>
                     </div>
                     <p>

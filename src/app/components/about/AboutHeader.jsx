@@ -10,11 +10,13 @@ const Header = () => {
 
         }}>
             <div className='header-main'>
-                <h1 style={{ fontWeight: 600, lineHeight: "3.5rem", fontSize: '2rem', marginBottom: "1rem" }}>
-                    Our Faculty members are really great, and they are very <TextOpacityBG left={true}>knowledgeable.</TextOpacityBG>
+                <h1 style={{ fontWeight: 600, color: "#1681AB", fontSize: '2rem', marginBottom: "1rem" }}>
+                    Our Faculty members are really great, and they are very knowledgeable.
                 </h1>
                 <div>
-                    <p>
+                    <p style={{
+                        color: '#3D3D3D'
+                    }}>
                         They are from great universities. The teaching quality depends on every professor, but the teaching quality of most of them is good.
                     </p>
                 </div>

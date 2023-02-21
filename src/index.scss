@@ -8,6 +8,10 @@ $primary-main: #1681AB;
   width: 100vw !important;
   height: 100vh !important;
   overflow-x: hidden;
+  padding: 0 !important;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 :root {

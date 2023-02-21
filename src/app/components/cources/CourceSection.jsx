@@ -11,7 +11,7 @@ function CourceSection({ title, image, desc, left = false }) {
                 <SectionHeading title={title} />
             </Col>
             <Col xs={12}>
-                <Row className='pt-2 align-items-center justify-content-center'>
+                <Row className='pt-2 align-items-start justify-content-center'>
                     <Col xs={{ span: 10, order: "first" }} md={{ span: 3, order: left ? "first" : "last" }} className=''>
                         <img style={{
                             width: "100%",

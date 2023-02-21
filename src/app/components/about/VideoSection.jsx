@@ -9,7 +9,7 @@ function VideoSection() {
         <Row style={{ backgroundColor: "#1681AB" }} className='d-flex justify-content-center align-items-center position-relative p-5'>
             <BGCompo />
             <Col xs={12} md={10} className="d-flex flex-column justify-content-center align-items-center">
-                <h2 style={{ color: "white", zIndex: 1, fontWeight: 700 }}>WHY PERSISTANCE?</h2>
+                <h2 style={{ color: "white", zIndex: 1, marginTop: "-2.5rem", fontWeight: 700 }}>WHY PERSISTANCE?</h2>
                 <iframe
                     style={{
                         marginTop: "1rem",

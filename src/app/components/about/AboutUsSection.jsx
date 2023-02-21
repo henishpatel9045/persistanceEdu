@@ -22,7 +22,7 @@ function AboutUsSection() {
                 </div>
             </Col>
             <Col xs={12}>
-                <Row className='about-us-content'>
+                <Row className='about-us-content d-flex align-item-start justify-content-center'>
                     <Col xs={12} md={4}>
                         <div className='image'>
                             <img src={OWNER} alt="Ashish Anand" />
