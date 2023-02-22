@@ -2,7 +2,7 @@
 
 /* --------------------------------- MAIN BG -------------------------------- */
 
-@mixin main-bg-mixin{
+@mixin main-bg-mixin {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -18,7 +18,7 @@
   background: linear-gradient(107.74deg, #1681ab -1.72%, #09749e 102.41%);
 }
 
-.main-bg-trans{
+.main-bg-trans {
   @include main-bg-mixin();
 }
 
@@ -126,7 +126,7 @@
   border-radius: 20px;
   overflow: hidden;
   padding: 0;
-  
+
   .carousel-img {
     width: 100% !important;
     height: 100% !important;
@@ -157,7 +157,7 @@
   @media (max-width: 768px) {
     width: calc(90vw - 1rem) !important;
     height: calc(55vh - 1rem) !important;
-    object-fit: cover; 
+    object-fit: cover;
     border-radius: 15%;
     resize: both;
   }
@@ -777,7 +777,7 @@ $full: 100vh;
     font-size: 1rem;
     font-weight: 400;
     width: 70%;
-    color: #3D3D3D;
+    color: #3d3d3d;
 
     @media (max-width: 768px) {
       width: 80vw;
@@ -828,34 +828,33 @@ $full: 100vh;
   }
 }
 
-
 /* ------------------------------ ACHIEVEMENTS ------------------------------ */
 
-.a-card{
+.a-card {
   width: 100%;
   height: 5rem;
   border: 1px solid $primary-main;
-  border-left-width: .5rem;
+  border-left-width: 0.5rem;
   border-radius: 0.8rem;
   // background-color: $primary-main;
-  padding: .5rem;
+  padding: 0.5rem;
 
-  span{
-    padding: .5rem;
-    border-radius: .5rem;
+  span {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     height: 100%;
-    background-color: #FFF;
+    background-color: #fff;
     color: $primary-main;
   }
 }
 
 /* ------------------------ ACHIEVEMENTS RESULTS CARD ----------------------- */
 
-.ar-card{
+.ar-card {
   width: 100%;
   height: 100%;
   position: relative;
@@ -864,11 +863,11 @@ $full: 100vh;
   justify-content: center;
   flex-direction: column;
 
-  *{
+  * {
     z-index: 1;
   }
 
-  .dome{
+  .dome {
     position: absolute;
     bottom: 20%;
     left: 0;
@@ -877,51 +876,114 @@ $full: 100vh;
     z-index: 0 !important;
   }
 
-  img{
+  img {
     height: 80%;
     object-fit: scale-down;
     margin-bottom: -1rem;
   }
 
-  div{
-    padding: .5rem;
+  div {
+    padding: 0.5rem;
     width: 100%;
     height: 20%;
     background-color: $primary-main;
-    border-radius: 0 0 0.5rem .5rem;
+    border-radius: 0 0 0.5rem 0.5rem;
     z-index: 2;
     flex: 1;
 
-    *{
+    * {
       text-align: center;
     }
-    h4{
+    h4 {
       font-weight: 600;
       font-size: 1.2rem;
       line-height: 1.2rem;
     }
-    h5{
+    h5 {
       font-weight: 400;
       font-size: 1rem;
       line-height: 1rem;
-      color: #BFDFEC;
+      color: #bfdfec;
     }
   }
 }
 
-.a-result-header{
-  *{
+.a-result-header {
+  * {
     text-align: center;
   }
 
-  h3{
-    color: #3D3D3D;
+  h3 {
+    color: #3d3d3d;
     font-weight: 600;
   }
 
-  h4{
+  h4 {
     color: #888888;
     font-size: 1rem;
   }
+}
 
+/* ------------------------------ TESTIMONIALS ------------------------------ */
+
+.t-card {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-top: 3rem;
+
+  .q-mark {
+    position: absolute;
+    top: -1rem;
+    left: 0;
+  }
+
+  p {
+    color: #3d3d3d;
+    height: 80%;
+    width: 100%;
+    text-align: start;
+  }
+
+  div {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img{
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+
+    div {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      h4 {
+        font-weight: 600;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        color: $primary-main;
+      }
+
+      h5 {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1rem;
+        color: #888888;
+      }
+    }
+  }
 }

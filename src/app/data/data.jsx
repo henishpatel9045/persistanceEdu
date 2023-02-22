@@ -344,6 +344,75 @@ const AResultsData = [
   }
 ]
 
+const TestimonialData = [
+  {
+    image: AR1,
+    name: "Pranjal Bharadwaj",
+    subtitle: "IIT Bombay",
+    content: "His tips and tricks always amazed me and often simplified the topics nightmare to others. He is exceptional at providing the necessary guidance."
+  },
+  {
+    image: AR1,
+    name: "Pranjal Bharadwaj",
+    subtitle: "IIT Bombay",
+    content: "His tips and tricks always amazed me and often simplified the topics nightmare to others. He is exceptional at providing the necessary guidance."
+  },
+  {
+    image: AR2,
+    name: "Pranjal Bharadwaj",
+    subtitle: "IIT Bombay",
+    content: "His tips and tricks always amazed me and often simplified the topics nightmare to others. He is exceptional at providing the necessary guidance."
+  },
+  {
+    image: AR1,
+    name: "Pranjal Bharadwaj",
+    subtitle: "IIT Bombay",
+    content: "His tips and tricks always amazed me and often simplified the topics nightmare to others. He is exceptional at providing the necessary guidance."
+  },
+  {
+    image: AR2,
+    name: "Pranjal Bharadwaj",
+    subtitle: "IIT Bombay",
+    content: "His tips and tricks always amazed me and often simplified the topics nightmare to others. He is exceptional at providing the necessary guidance."
+  },
+  {
+    image: AR1,
+    name: "Pranjal Bharadwaj",
+    subtitle: "IIT Bombay",
+    content: "His tips and tricks always amazed me and often simplified the topics nightmare to others. He is exceptional at providing the necessary guidance."
+  },
+  {
+    image: AR2,
+    name: "Pranjal Bharadwaj",
+    subtitle: "IIT Bombay",
+    content: "His tips and tricks always amazed me and often simplified the topics nightmare to others. He is exceptional at providing the necessary guidance."
+  },
+  {
+    image: AR2,
+    name: "Pranjal Bharadwaj",
+    subtitle: "IIT Bombay",
+    content: "His tips and tricks always amazed me and often simplified the topics nightmare to others. He is exceptional at providing the necessary guidance."
+  },
+  {
+    image: AR1,
+    name: "Pranjal Bharadwaj",
+    subtitle: "IIT Bombay",
+    content: "His tips and tricks always amazed me and often simplified the topics nightmare to others. He is exceptional at providing the necessary guidance."
+  },
+  {
+    image: AR2,
+    name: "Pranjal Bharadwaj",
+    subtitle: "IIT Bombay",
+    content: "His tips and tricks always amazed me and often simplified the topics nightmare to others. He is exceptional at providing the necessary guidance."
+  },
+  {
+    image: AR1,
+    name: "Pranjal Bharadwaj",
+    subtitle: "IIT Bombay",
+    content: "His tips and tricks always amazed me and often simplified the topics nightmare to others. He is exceptional at providing the necessary guidance."
+  },
+]
+
 const SocialLinks = {
   fb: "https://www.facebook.com/persistenceranchi",
   yt: "https://www.youtube.com/channel/UCOEex53MPQT1vgkzEVbQs0A/featured",
@@ -351,4 +420,4 @@ const SocialLinks = {
   tel: "+917488408051",
 };
 
-export { SitePages, AResultsData, ProgramData, AchievementsData, CriteriaData, OurResultsData, CourceData, HomeCards, HomeCarouselImage, SocialLinks };
+export { SitePages, TestimonialData, AResultsData, ProgramData, AchievementsData, CriteriaData, OurResultsData, CourceData, HomeCards, HomeCarouselImage, SocialLinks };
