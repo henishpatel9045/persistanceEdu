@@ -45,7 +45,7 @@ function MainNavbar() {
               </Nav>
               <Nav>
                 {
-                  items.map((item, index) => (
+                  items?.map((item, index) => (
                     <Link key={index} to={item.href} style={{
                       marginTop: "1rem"
                     }}><Nav.Link bsPrefix={currPath == item.href

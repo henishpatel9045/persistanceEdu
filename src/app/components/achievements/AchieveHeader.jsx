@@ -1,18 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Col, Row } from 'react-bootstrap'
 import { useMedia } from 'use-media'
+import { AchievementsContext } from '../../context/SiteContext'
 import { AchievementsData } from '../../data/data'
 import SectionHeading from '../SectionHeading'
 
 import ACard from './ACard'
 
 function AchieveHeader() {
-  const [data, setData] = useState([])
-  const isSM = useMedia({maxWidth: "768px"})
+  const {aData:data} = useContext(AchievementsContext);
 
-  useEffect(() => {
-    setData(AchievementsData)
-  }, [])
+  const isSM = useMedia({maxWidth: "768px"})
 
   return (
     <Row className='pt-5'>
@@ -24,7 +22,7 @@ function AchieveHeader() {
         style={{
           rowGap: "1rem"
         }}>
-          {data.map((item, index) => {
+          {data?.map((item, index) => {
             return (
               <Col key={index} xs={12} sm={6} lg={4}>
                 <ACard desc={item.title} />

@@ -10,11 +10,11 @@ function AboutCarousel({data}) {
     const [imageData, setImageData] = useState([]);
 
     useEffect(() => {
-        setImageData(data.map((item, index) =>
+        setImageData(data?.map((item, index) =>
             <Carousel.Item className="carousel-img" key={index} >
                 <img src={item?.src} className="carousel-img" />
             </Carousel.Item>));
-        setTotalPages(data.length);
+        setTotalPages(data?.length);
         setCurrPage(1);
     }, [])
 

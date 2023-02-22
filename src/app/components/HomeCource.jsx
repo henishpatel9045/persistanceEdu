@@ -1,16 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Col, Row } from 'react-bootstrap'
 import HomeCourceCard from './HomeCourceCard'
 import SectionHeading from './SectionHeading'
 import { ProgramData, SocialLinks } from '../data/data'
 import CallBtnHome from './CallBtnHome'
+import { HomeContext } from '../context/SiteContext'
 
 function HomeCource() {
-    const [progData, setProgData] = useState([]);
-
-    useEffect(() => {
-        setProgData(ProgramData);
-    }, [])
+    const {courceData:progData} = useContext(HomeContext)
 
     return (
         <Row className='pt-5'>
@@ -31,7 +28,7 @@ function HomeCource() {
                 <Row className='p-5' style={{
                     rowGap: "1rem"
                 }}>
-                    {progData.map((item, index) => (
+                    {progData?.map((item, index) => (
                         <Col key={index} md={4} style={{
                             minHeight: "20rem",
                         }}>

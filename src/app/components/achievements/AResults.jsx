@@ -1,16 +1,13 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { Col, Row } from 'react-bootstrap'
+import { AchievementsContext } from '../../context/SiteContext'
 import { AResultsData } from '../../data/data'
 import SectionHeading from '../SectionHeading'
 import AResultCard from './AResultCard'
 
 function AResults() {
-    const [data, setData] = useState([])
-
-    useEffect(() => {
-        setData(AResultsData)
-    }, [])
-
+    const {rData:data} = useContext(AchievementsContext); 
+    
     return (
         <Row className='d-flex align-items-center justify-content-center'>
             <Col xs={12}>
@@ -19,7 +16,7 @@ function AResults() {
             <Col xs={12}>
                 <Row>
                     {
-                        data.map((item, index) => {
+                        data?.map((item, index) => {
                             return <Row key={index} className="d-flex align-items-center justify-content-center p-5">
                                 <Col xs={12} md={10} className="a-result-header pb-4">
                                     <h3>{item?.title}</h3>
@@ -28,7 +25,7 @@ function AResults() {
                                 <Row style={{
                                     rowGap: "1rem"
                                 }}>
-                                        {item.data.map((it, ind) => {
+                                        {item.data?.map((it, ind) => {
                                             return <Col key={ind} xs={12} md={6} lg={3}>
                                                 <AResultCard image={it?.image}
                                                     name={it?.name}

@@ -19,7 +19,7 @@ function CourceSection({ title, image, desc, left = false }) {
                         }} src={image} alt={title} />
                     </Col>
                     <Col xs={{ span: 10, order: "first" }} md={{ span: 6, order: left ? "last" : "first" }} className='d-flex flex-column align-items-center cource-content'>
-                        {desc.map((item, ind) => <p style={{
+                        {desc?.map((item, ind) => <p style={{
                             color: "#3D3D3D",
                             fontWeight: 400,
                         }} key={ind}>{item}</p>)}

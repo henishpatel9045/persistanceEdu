@@ -20,7 +20,7 @@ function OurCources() {
       }}>
         <CourceHead />
       </Container>
-      {courceData.map((item, index) => {
+      {courceData?.map((item, index) => {
         return <CourceSection
           key={index}
           title={item.title}
