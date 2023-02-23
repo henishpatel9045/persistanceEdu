@@ -956,13 +956,12 @@ $full: 100vh;
     align-items: center;
     justify-content: space-between;
 
-    img{
+    img {
       width: 3rem;
       height: 3rem;
       border-radius: 50%;
       overflow: hidden;
     }
-
 
     div {
       padding: 1rem;
@@ -985,5 +984,54 @@ $full: 100vh;
         color: #888888;
       }
     }
+  }
+}
+
+/* ------------------------------- CONTACT US ------------------------------- */
+
+.g-map {
+  width: 100%;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.contact-info {
+  position: relative;
+  background-color: $primary-main;
+  padding: 3rem 1.5rem;
+  border-radius: 0.5rem;
+
+  .bg-compo {
+    z-index: -1 !important;
+    width: 100%;
+    height: 100%;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  a:hover {
+    color: "#888888" !important;
+  }
+  * {
+    z-index: 1;
+  }
+}
+
+.contact-form-container {
+  height: 120%;
+  width: 100%;
+
+  h3 {
+    color: $primary-main;
+    font-weight: 700;
+    font-size: 1.5rem;
   }
 }

@@ -39,7 +39,6 @@ const SitePages = [
   },
 ];
 
-
 const HomeCards = [
   {
     txt: "Our topper in IIT-JEE (Advanced) Ankit Akash Jha AIR 110 (Gen)"
@@ -418,6 +417,9 @@ const SocialLinks = {
   yt: "https://www.youtube.com/channel/UCOEex53MPQT1vgkzEVbQs0A/featured",
   map: "https://goo.gl/maps/xjxFm2FDTpq3pnzV7",
   tel: "+917488408051",
+  address: "Persistence Education Pvt Ltd., Near Governor's House, Kalibabu street, Ranchi, Jharkhand - 834001,India",
+  tel2: "+918235071441",
+  mail: "persistenceranchi@gmail.com"
 };
 
 export { SitePages, TestimonialData, AResultsData, ProgramData, AchievementsData, CriteriaData, OurResultsData, CourceData, HomeCards, HomeCarouselImage, SocialLinks };
