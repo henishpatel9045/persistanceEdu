@@ -6,10 +6,10 @@ import ContactInfo from './ContactInfo'
 function ContactContent() {
     return (
         <Row className='d-flex align-items-center justify-content-center pb-5'>
-            <Col xs={12} md={4} className="pb-3">
+            <Col xs={11} md={4} className="pb-3">
                 <ContactInfo />
             </Col>
-            <Col xs={12} md={6}>
+            <Col xs={11} md={6}>
                 <ContactForm />
             </Col>
         </Row>

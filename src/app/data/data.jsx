@@ -417,7 +417,7 @@ const SocialLinks = {
   yt: "https://www.youtube.com/channel/UCOEex53MPQT1vgkzEVbQs0A/featured",
   map: "https://goo.gl/maps/xjxFm2FDTpq3pnzV7",
   tel: "+917488408051",
-  address: "Persistence Education Pvt Ltd., Near Governor's House, Kalibabu street, Ranchi, Jharkhand - 834001,India",
+  address: "Persistence Education Pvt Ltd.,\nNear Governor's House, \nKalibabu street, Ranchi, \nJharkhand - 834001,India",
   tel2: "+918235071441",
   mail: "persistenceranchi@gmail.com"
 };
