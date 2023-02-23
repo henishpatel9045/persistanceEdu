@@ -5,7 +5,6 @@ import BGCompo from './BGCompo'
 import HeaderIMG from './HeaderIMG'
 import "./components.scss";
 
-import { HomeCarouselImage } from '../data/data'
 import AboutCarousel from './about/AboutCarousel';
 import { useMedia } from 'use-media';
 
@@ -27,7 +26,7 @@ function HeaderBase({Header, stars=true, about=false, bg=false, style={}}) {
       }}>
         <BGCompo stars={stars} show={bg} />
         <Col sm={{ span: 12, order: "last" }} md={6} >
-          {about ? <AboutCarousel data={HomeCarouselImage} /> : <HeaderIMG data={HomeCarouselImage} />}
+          {about ? <AboutCarousel /> : <HeaderIMG />}
         </Col>
         <Col sm={{ span: 12, order: 'first' }} md={about ? 5 : 6}>
           <Header />

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Container } from 'react-bootstrap'
+import { api } from '../api/call'
 import AchieveHeader from '../components/achievements/AchieveHeader'
 import AResults from '../components/achievements/AResults'
 import { AchievementsContext } from '../context/SiteContext'
@@ -10,8 +11,18 @@ function Achievements() {
   const [aData, setAData] = useState([])
 
   useEffect(() => {
-    setRData(AResultsData)
-    setAData(AchievementsData)
+    api.get("results").then(res => {
+      if (res.ok) {
+        setRData(res.data.results)
+        setAData(res.data.aCards)
+      } else {
+        setRData(AResultsData);
+        setAData(AchievementsData)
+      }
+    }).catch(err => {
+      setRData(AResultsData);
+      setAData(AchievementsData)
+    })
   }, [])
 
   return (

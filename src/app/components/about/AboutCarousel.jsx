@@ -1,13 +1,15 @@
-import React, {useState, useEffect, useRef } from 'react'
+import React, {useState, useEffect, useRef, useContext } from 'react'
 import { Carousel } from 'react-bootstrap'
 
 import Pagination from '../Pagination';
 import "../components.scss"
+import { AboutContext } from '../../context/SiteContext';
 
-function AboutCarousel({data}) {
+function AboutCarousel() {
     const [currPage, setCurrPage] = useState(0);
     const [totalPages, setTotalPages] = useState(0);
     const [imageData, setImageData] = useState([]);
+    const {carouImageData:data} = useContext(AboutContext);
 
     useEffect(() => {
         setImageData(data?.map((item, index) =>
@@ -16,7 +18,7 @@ function AboutCarousel({data}) {
             </Carousel.Item>));
         setTotalPages(data?.length);
         setCurrPage(1);
-    }, [])
+    }, [data])
 
     const currRef = useRef(null);
 

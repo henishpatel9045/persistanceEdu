@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Container } from 'react-bootstrap'
+import { api } from '../api/call'
 
 import CourceHead from '../components/cources/CourceHead'
 import CourceSection from '../components/cources/CourceSection'
@@ -9,7 +10,15 @@ function OurCources() {
   const [courceData, setCourceData] = useState([])
 
   useEffect(() => {
-    setCourceData(CourceData);
+    api.get("cource").then(res => {
+      if (res.ok) {
+        setCourceData(res.data.cource)
+      } else {
+        setCourceData(CourceData);
+      }
+    }).catch(err => {
+      setCourceData(CourceData);
+    })
   }, [])
 
   return (

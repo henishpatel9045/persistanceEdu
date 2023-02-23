@@ -8,6 +8,7 @@ import OurSystem from '../components/OurSystem'
 import HomeCource from '../components/HomeCource'
 import { HomeContext } from '../context/SiteContext'
 import { OurResultsData, ProgramData, HomeCards, HomeCarouselImage } from '../data/data'
+import { api } from '../api/call'
 
 function Home() {
     const [cardsData, setCardsData] = useState([])
@@ -16,10 +17,24 @@ function Home() {
     const [courceData, setCourceData] = useState([])
 
     useEffect(() => {
-        setCardsData(HomeCards);
-        setCarouImageData(HomeCarouselImage);
-        setCourceData(ProgramData);
-        setResultsData(OurResultsData);
+        api.get("home").then(res => {
+            if (res.ok) {
+                setCardsData(res.data.cards)
+                setCarouImageData(res.data.carouselImage)
+                setCourceData(res.data.programs)
+                setResultsData(res.data.results)
+            } else {
+                setCardsData(HomeCards);
+                setCarouImageData(HomeCarouselImage);
+                setCourceData(ProgramData);
+                setResultsData(OurResultsData);
+            }
+        }).catch(err => {
+            setCardsData(HomeCards);
+            setCarouImageData(HomeCarouselImage);
+            setCourceData(ProgramData);
+            setResultsData(OurResultsData);
+        })
     }, [])
 
     return (
