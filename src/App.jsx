@@ -9,6 +9,7 @@ import OurCources from './app/pages/OurCources'
 import Achievements from './app/pages/Achievements'
 import Testimonials from './app/pages/Testimonials'
 import ContactUs from './app/pages/ContactUs'
+import FAQ from './app/pages/FAQ'
 
 
 function App() {
@@ -37,6 +38,9 @@ function App() {
             </Route>
             <Route path={["/contact"]} exact>
               <ContactUs />
+            </Route>
+            <Route path={["/faq"]} exact>
+              <FAQ />
             </Route>
             <Redirect to="/" />
           </Switch>

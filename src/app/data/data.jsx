@@ -422,4 +422,31 @@ const SocialLinks = {
   mail: "persistenceranchi@gmail.com"
 };
 
-export { SitePages, TestimonialData, AResultsData, ProgramData, AchievementsData, CriteriaData, OurResultsData, CourceData, HomeCards, HomeCarouselImage, SocialLinks };
+const FAQData = [
+  {
+    question: "Who are the teachers?",
+    ans: "We are committed to provide quality education as there is no alternative to the best. We have IIT Bombay alumnus and qualified faculty.Expert faculties from different parts of the country also visit the institute regularly. Under the guidance of IIT alumnus all faculties are groomed in teaching students excellently."
+  },
+  {
+    question: "Can I attend trial classes?",
+    ans: "Yes. Of course. PERSISTENCE INSTITUTE believes in providing quality education and imparting knowledge to the satisfaction of students. So, you can attend the classes to check if we teach qualitatively or not."
+  },
+  {
+    question: "What if students have doubts after the lectures?",
+    ans: "Our faculty always waits after the lecture to solve the doubts. Also, as part of our Pedagogy, we have built-in-Doubt Solving sessions after the completion of every topic."
+  },
+  {
+    question: "Will preparation for IIT JEE also help for other engineering entrance like the JEE main, BIT-SAT?",
+    ans: "As is well known, the IIT JEE is one of the most difficult entrance examinations held in the country. The syllabus of JEE Main is similar to that of IIT JEE. Also, the syllabus of State enterance is exactly identical to that of the Std. XII Board Exam. As mentioned earlier, the IIT JEE also covers the syllabus of Std. XII. Therefore, our 2 Year Program IIT JEE will not only help our students to tackle the IIT JEE successfully, but will also help them to prepare better and more effectively for other All India Level Engineering Entrance Exams like the JEE Main at the same time excelling in Board Exams."
+  },
+  {
+    question: "What type of study materials will be given to students?",
+    ans: "Like any other coaching institute we do not charge hefty amount for package which contains the same set of questions, rather we solicit each student seperately analysing their strength and weakness and prescribe questions according to that. Custom care is provided to each students which produces outstanding results for our studnents."
+  },
+  {
+    question: "Will there be any test series for students? How the performance will be judged?",
+    ans: "There are weekly Test series, for engineering entrance examination and for Pre Medical examinations, developed by the group of IITians and experienced medical faculties. These test series offer carefully molded and structured tests covering the entire syllabus of the examinations. These tests help students analyze their understanding, structure their approach and enhance their test taking capability to succeed in the final examination. A detailed analysis of the performance of student based on different parameters is carried out to bring out students ‘weak as well as strong point. This in depth analysis which includes Topic Wise Analysis, Difficulty Level Analysis, Comparison with Toppers, and Time Based Analysis among other analyses helps our experts to provide proper guidance to the student for further improvement. This method helps in the growth of the student by focusing more on the concerned area."
+  },
+]
+
+export { SitePages, TestimonialData, AResultsData, ProgramData, AchievementsData, CriteriaData, OurResultsData, CourceData, HomeCards, HomeCarouselImage, SocialLinks, FAQData };
