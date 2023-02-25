@@ -32,7 +32,7 @@ function HomeCource() {
                         <Col key={index} md={4} style={{
                             minHeight: "20rem",
                         }}>
-                            <HomeCourceCard title={item.title} content={item.content} href="http://www.google.com" />
+                            <HomeCourceCard title={item.title} content={item.desc} href="http://www.google.com" />
                         </Col>))}
                 </Row>
             </Col>

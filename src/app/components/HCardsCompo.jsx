@@ -11,7 +11,7 @@ function HCardsCompo() {
             {data?.map((item, index) => {
                 return (
                     <Col key={index} className='' xs={12} sm={12} md={4}>
-                        <HCard title={item.txt} />
+                        <HCard title={item.title} />
                     </Col>
                 )
             })}

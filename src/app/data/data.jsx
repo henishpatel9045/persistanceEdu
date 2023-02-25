@@ -41,13 +41,13 @@ const SitePages = [
 
 const HomeCards = [
   {
-    txt: "Our topper in IIT-JEE (Advanced) Ankit Akash Jha AIR 110 (Gen)"
+    title: "Our topper in IIT-JEE (Advanced) Ankit Akash Jha AIR 110 (Gen)"
   },
   {
-    txt: "More than 100 IIT admissions and More than 150 NIT admissions."
+    title: "More than 100 IIT admissions and More than 150 NIT admissions."
   },
   {
-    txt: "100 % NEET qualification since 2016"
+    title: "100 % NEET qualification since 2016"
   },
 ]
 
@@ -118,15 +118,15 @@ const CourceData = [
 const ProgramData = [
   {
     title: "One Year Program",
-    content: "One year course for Students who have recently passed class XII and are ambitious to clear IIT-JEE / MEDICAL after one year of passing class XII should enroll for this program."
+    desc: "One year course for Students who have recently passed class XII and are ambitious to clear IIT-JEE / MEDICAL after one year of passing class XII should enroll for this program."
   },
   {
     title: "Two Year Program",
-    content: "Students who have recently passed class X and are ambitious to clear IIT-JEE / MEDICAL with class XII should enroll for this program."
+    desc: "Students who have recently passed class X and are ambitious to clear IIT-JEE / MEDICAL with class XII should enroll for this program."
   },
   {
     title: "Foundation Program",
-    content: "In these sessions we prepare for NTSE and olympiads and cover the very basic fundamentals of maths and science of 11th standard primarily to bridge up the gap between differences in levels of school studies till class 10th and competitive exam requirements."
+    desc: "In these sessions we prepare for NTSE and olympiads and cover the very basic fundamentals of maths and science of 11th standard primarily to bridge up the gap between differences in levels of school studies till class 10th and competitive exam requirements."
   },
 ]
 
@@ -449,4 +449,18 @@ const FAQData = [
   },
 ]
 
-export { SitePages, TestimonialData, AResultsData, ProgramData, AchievementsData, CriteriaData, OurResultsData, CourceData, HomeCards, HomeCarouselImage, SocialLinks, FAQData };
+export {
+  SitePages,
+  TestimonialData,
+  AResultsData,
+  ProgramData,
+  AchievementsData,
+  CriteriaData,
+  OurResultsData,
+  CourceData,
+  HomeCards,
+  HomeCarouselImage,
+  SocialLinks,
+  FAQData
+};
+
