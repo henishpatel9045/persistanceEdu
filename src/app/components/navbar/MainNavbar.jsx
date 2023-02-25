@@ -38,10 +38,9 @@ function MainNavbar() {
             position: "absolute",
             top: 0,
             left: 0,
-            width: isSM ? "105vw" : "101vw"
           }} >
           <Container fluid style={{
-            paddingLeft: "2.5rem"
+            paddingLeft: "4.5rem"
           }}>
             <Link to="home"><Navbar.Brand><img src={LOGO} alt="Logo" className='main-logo' /></Navbar.Brand></Link>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" id='nav-toggle-btn' />

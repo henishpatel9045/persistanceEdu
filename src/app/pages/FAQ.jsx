@@ -1,11 +1,14 @@
 import React from 'react'
+import { Col, Row } from 'react-bootstrap'
 import FAQSection from '../components/faq/FAQSection'
 
 function FAQ() {
   return (
-    <>
-        <FAQSection/>
-    </>
+    <Row className='pt-5'>
+      <Col xs={12}>
+        <FAQSection />
+      </Col>
+    </Row>
   )
 }
 

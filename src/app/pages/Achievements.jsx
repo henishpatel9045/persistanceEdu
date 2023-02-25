@@ -27,7 +27,7 @@ function Achievements() {
 
   return (
     <AchievementsContext.Provider value={{ rData, aData }}>
-      <Container fluid style={{
+      <Container className='pt-5' fluid style={{
         padding: "0",
         margin: "0",
       }}>

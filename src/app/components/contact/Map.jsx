@@ -8,7 +8,7 @@ import { SocialLinks } from '../../data/data'
 function Map() {
   return (
     <Row className='d-flex align-items-center justify-content-center p-md-5'>
-      <Col xs={12} md={10} className="d-flex align-items-center justify-content-center">
+      <Col xs={12} md={10} className="d-flex align-items-center justify-content-center pt-5">
         <div className='g-map d-flex align-items-center justify-content-center'>
           <img src={MAP} alt="Map location" />
           <a href={SocialLinks.map} target="_blank" className='pointer'>{" "}</a>

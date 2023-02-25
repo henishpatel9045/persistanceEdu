@@ -30,7 +30,7 @@ function Footer() {
                     alignItems: "center"
                 }}>
                     <Col lg={2} xs={12} className={isSM ? "d-flex align-items-center justify-content-center" : ""} >
-                        <Link to="home"><img src={LOGO} /></Link>
+                        <Link to="home"><img src={LOGO} alt="logo" className='main-logo' /></Link>
                     </Col>
                     <Col lg={8} xs={12} style={{
                         display: "flex",

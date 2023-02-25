@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Container } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 import { api } from '../api/call'
 
 import CourceHead from '../components/cources/CourceHead'
@@ -22,23 +22,25 @@ function OurCources() {
   }, [])
 
   return (
-    <>
-      <Container fluid className='main-bg-trans' style={{
-        padding: "0",
-        margin: "0",
-      }}>
-        <CourceHead />
-      </Container>
-      {courceData?.map((item, index) => {
-        return <CourceSection
-          key={index}
-          title={item.title}
-          image={item.image}
-          desc={item.content}
-          left={index % 2 == 0}
-        />
-      })}
-    </>
+    <Row className='pb-3'>
+      <Col xs={12}>
+        <Container fluid className='main-bg-trans' style={{
+          padding: "0",
+          margin: "0",
+        }}>
+          <CourceHead />
+        </Container>
+        {courceData?.map((item, index) => {
+          return <CourceSection
+            key={index}
+            title={item.title}
+            image={item.image}
+            desc={item.content}
+            left={index % 2 == 0}
+          />
+        })}
+      </Col>
+    </Row>
   )
 }
 
