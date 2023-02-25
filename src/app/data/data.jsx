@@ -8,6 +8,8 @@ import AR2 from "../assets/aResults-2.png"
 /*                                   KEEPERS                                  */
 /* -------------------------------------------------------------------------- */
 
+const FORMSPREEURL = "https://formspree.io/xpzowdjy"
+
 const SitePages = [
   {
     title: "Home",
@@ -461,6 +463,7 @@ export {
   HomeCards,
   HomeCarouselImage,
   SocialLinks,
-  FAQData
+  FAQData,
+  FORMSPREEURL
 };
 

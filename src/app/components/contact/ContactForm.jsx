@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
-import { Alert, Form } from 'react-bootstrap'
+import { Form } from 'react-bootstrap'
 import "../components.scss"
+import axios from 'axios'
+import { FORMSPREEURL } from '../../data/data'
 
 function ContactForm() {
     const [firstName, setFirstName] = useState("")
@@ -9,9 +11,16 @@ function ContactForm() {
     const [message, setMessage] = useState("")
 
     const handleSubmit = () => {
-        console.log(firstName, lastName, email, message);
         if (!message || message?.length == 0) {
-            alert("Fill message")
+            try {
+                const formData = new FormData();
+                formData.append("name", `${firstName} ${lastName}`);
+                formData.append("fromemail", email);
+                formData.append("message", message);
+                axios.post(FORMSPREEURL, formData);
+            } catch (error) {
+                alert("Sorry, try again!")
+            }
         }
         else {
             alert("Message sent successfully!")
