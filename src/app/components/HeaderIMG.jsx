@@ -19,7 +19,7 @@ function HeaderIMG() {
                 <img src={item?.src} className="carousel-img" />
             </Carousel.Item>));
         setTotalPages(carouImageData?.length);
-        setCurrPage(1);
+        setCurrPage(carouImageData?.length > 0 ? 1 : 0);
     }, [carouImageData])
 
     const currRef = useRef(null);

@@ -315,6 +315,14 @@ $full: 100vh;
   padding: 1.5rem 2rem;
   padding-left: 3rem !important;
   padding-right: 3rem !important;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  z-index: 1000;
+  
+  @media (max-width: "768px") {
+    width: 104vw;
+  }
 
   .footer-nav-link {
     color: white;
@@ -1070,4 +1078,19 @@ button.accordion-button[aria-expanded="true"] {
 
 .accordion-body{
   color: #888888;
+}
+
+.faq-contact-link{
+  color: #3d3d3d;
+  text-align: center;
+  font-size: 1.2rem;
+
+  a{
+    color: #FF7B02;
+    text-decoration: underline !important;
+  }
+}
+
+
+.main-logo{
 }

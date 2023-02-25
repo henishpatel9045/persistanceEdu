@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import { Accordion, Col, Row, useAccordionButton } from 'react-bootstrap'
+import { Accordion, Col, Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import { FAQData } from '../../data/data'
 import SectionHeading from '../SectionHeading'
+import "../components.scss"
 
 function FAQSection() {
     const [data, setData] = useState([])
@@ -12,7 +14,7 @@ function FAQSection() {
     }, [])
 
     return (
-        <Row className='d-flex align-items-center justify-content-center pt-5 pb-4'>
+        <Row className='d-flex align-items-center justify-content-center pt-5 pb-3'>
             <Col className='pt-5' xs={12}>
                 <SectionHeading title="Frequently asked question" />
             </Col>
@@ -29,6 +31,11 @@ function FAQSection() {
                         </Accordion.Item>
                     })}
                 </Accordion>
+            </Col>
+            <Col xs={12} className='d-flex align-items-center justify-content-center'>
+                <span className='faq-contact-link'>
+                    Still have a question? <Link to={"contact"}>Ask your question here</Link>
+                </span>
             </Col>
         </Row>
     )

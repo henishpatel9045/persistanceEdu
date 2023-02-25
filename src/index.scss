@@ -6,12 +6,13 @@ $primary-main: #1681AB;
 .App{
   background-color: white;
   width: 100vw !important;
-  height: 100vh !important;
-  overflow-x: hidden;
+  min-height: 100vh !important;
+  overflow-x: hidden !important;
   padding: 0 !important;
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  position: relative;
 }
 
 :root {
@@ -29,6 +30,7 @@ $primary-main: #1681AB;
 
 body {
   margin: 0;
+  padding: 0;
   display: flex;
   place-items: center;
   min-width: 320px;

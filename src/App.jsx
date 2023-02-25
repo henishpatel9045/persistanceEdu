@@ -10,9 +10,13 @@ import Achievements from './app/pages/Achievements'
 import Testimonials from './app/pages/Testimonials'
 import ContactUs from './app/pages/ContactUs'
 import FAQ from './app/pages/FAQ'
+import { useMedia } from 'use-media'
+import { useEffect } from 'react'
 
 
 function App() {
+  const isSM = useMedia({maxWidth: "1000px"})
+
   return (
     <BrowserRouter>
       <div className="App">
@@ -44,6 +48,9 @@ function App() {
             </Route>
             <Redirect to="/" />
           </Switch>
+          <div style={{
+            minHeight: isSM ? "30rem" : "14rem"
+          }} />
           <Footer />
         </Container>
       </div>

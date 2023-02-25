@@ -5,7 +5,7 @@ import ContactInfo from './ContactInfo'
 
 function ContactContent() {
     return (
-        <Row className='d-flex align-items-center justify-content-center pb-5'>
+        <Row className='d-flex align-items-center justify-content-center pb-3'>
             <Col xs={11} md={4} className="pb-3">
                 <ContactInfo />
             </Col>

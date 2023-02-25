@@ -29,7 +29,7 @@ function Criteria() {
                 <Accordion>
                     {criteriaData?.map((item, index) => {
                         return (
-                            <Accordion.Item eventKey={`${index}`}>
+                            <Accordion.Item eventKey={`${index}`} key={index}>
                                 <Accordion.Header style={{color: "#3D3D3D", fontWeight: 400}} >{index+1}. {item.title}</Accordion.Header>
                                 <Accordion.Body style={{
                                     color: "#888888"
