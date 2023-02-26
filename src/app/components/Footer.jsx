@@ -33,20 +33,25 @@ function Footer() {
                         <Link to="home"><img src={LOGO} alt="logo" className='main-logo' /></Link>
                     </Col>
                     <Col lg={8} xs={12} style={{
-                        display: "flex",
-                        justifyContent: isSM ? "center" : "space-around",
-                        alignItems: "center",
-                        flexWrap: "wrap",
+                        // display: "flex",
+                        // justifyContent: isSM ? "center" : "space-around",
+                        // alignItems: "center",
+                        // flexWrap: "wrap",
                     }}>
                         <Row className={isSM ? "d-flex justify-content-center" : ""}>
-                            {SitePages.map((item, ind) => {
-                                return <Col lg="auto" xs={6} key={ind} style={{
-                                    maxWidth: "8rem",
-                                    textAlign: "center"
-                                }} >
-                                    <Link to={item.href} ><a className='footer-nav-link' href={item.href}>{item.title}</a></Link>
-                                </Col>
-                            })}
+                            <Col xs={12} style={{
+                                textAlign: "center",
+                                display: "flex",
+                                justifyContent: "space-around",
+                                alignItems: "center",
+                                flexWrap: "wrap",
+                                columnGap: "0.5rem",
+                                rowGap: "0.5rem",
+                            }} >
+                                {SitePages.map((item, ind) => {
+                                    return <Link key={ind} to={item.href} ><a className='footer-nav-link' href={item.href}>{item.title}</a></Link>
+                                })}
+                            </Col>
                         </Row>
                     </Col>
                     <Col lg={2} xs={12} className={isSM ? "d-flex align-items-center justify-content-center" : ""}>
