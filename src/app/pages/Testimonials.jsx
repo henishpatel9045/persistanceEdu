@@ -19,7 +19,7 @@ function Testimonials() {
     }, [])
 
     return (
-        <Row className='pt-5'>
+        <Row className=''>
             <Col xs={12}>
                 <TSection data={tData} />
             </Col>

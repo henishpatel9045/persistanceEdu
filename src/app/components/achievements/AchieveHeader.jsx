@@ -14,7 +14,7 @@ function AchieveHeader() {
 
   return (
     <Row className='pt-5'>
-      <Col xs={12} className="pt-5">
+      <Col xs={12} className="">
         <SectionHeading title="Achievements" />
       </Col>
       <Col xs={12}>

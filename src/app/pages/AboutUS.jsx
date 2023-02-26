@@ -26,12 +26,12 @@ function AboutUS() {
 
     return (
         <AboutContext.Provider value={{carouImageData}}>
-            <Container fluid className='main-bg-trans' style={{
+            {/* <Container fluid className='main-bg-trans' style={{
                 padding: "0",
                 margin: "0",
             }}>
                 <AboutHeader />
-            </Container>
+            </Container> */}
             <AboutUsSection/>
             <VideoSection/>
             <Criteria/>

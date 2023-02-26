@@ -8,7 +8,7 @@ import OWNER from "../../assets/owner.png"
 function AboutUsSection() {
     return (
         <Row className='pt-5'>
-            <Col xs={12}>
+            <Col xs={12} className="pt-5">
                 <SectionHeading title={"About Us"} />
             </Col>
             <Col xs={12}>

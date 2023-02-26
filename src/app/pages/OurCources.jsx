@@ -22,14 +22,14 @@ function OurCources() {
   }, [])
 
   return (
-    <Row className='pb-5'>
-      <Col xs={12}>
-        <Container fluid className='main-bg-trans' style={{
+    <Row className='pb-5 pt-5'>
+      <Col xs={12} className="pt-3">
+        {/* <Container fluid className='main-bg-trans' style={{
           padding: "0",
           margin: "0",
         }}>
           <CourceHead />
-        </Container>
+        </Container> */}
         {courceData?.map((item, index) => {
           return <CourceSection
             key={index}
