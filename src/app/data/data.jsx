@@ -20,12 +20,16 @@ const SitePages = [
     href: "about",
   },
   {
-    title: "Our Cources",
+    title: "Our Courses",
     href: "cources",
   },
   {
-    title: "Achievements & Results",
+    title: "Results",
     href: "achievements",
+  },
+  {
+    title: "Inspiring Stories",
+    href: "story",
   },
   {
     title: "Students Testimonials",

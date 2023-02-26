@@ -321,7 +321,7 @@ $full: 100vh;
   right: 10px;
   width: 101vw;
   z-index: 1000;
-  
+
   @media (max-width: "768px") {
   }
 
@@ -396,7 +396,6 @@ $full: 100vh;
 .flex-col-center {
   display: flex;
   flex-direction: column;
-  align-itms: center;
   justify-content: center;
 }
 
@@ -1072,31 +1071,26 @@ button.accordion-button[aria-expanded="true"] {
   transition: all 0.2s ease-out;
   color: white;
 
-  &::after{
+  &::after {
     -webkit-filter: grayscale(100) invert(100) brightness(100);
   }
 }
 
-.accordion-body{
+.accordion-body {
   color: #888888;
 }
 
-.faq-contact-link{
+.faq-contact-link {
   color: #3d3d3d;
   text-align: center;
   font-size: 1.2rem;
 
-  a{
-    color: #FF7B02;
+  a {
+    color: #ff7b02;
     text-decoration: underline !important;
   }
 }
 
-
-.main-logo{
-  width: 10rem;
-
-  @media (max-width: 768px) {
-    width: 8rem;
-  }
+.main-logo {
+  height: 4rem;
 }

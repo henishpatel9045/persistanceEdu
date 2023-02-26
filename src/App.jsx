@@ -49,7 +49,7 @@ function App() {
             <Redirect to="/" />
           </Switch>
           <div style={{
-            minHeight: isSM ? "29rem" : "14rem"
+            minHeight: isSM ? "25rem" : "10rem"
           }} />
           <Footer />
         </Container>

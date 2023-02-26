@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Col, Container, Navbar, Nav, NavDropdown, Row } from 'react-bootstrap'
+import { Col, Container, Navbar, Nav, Row } from 'react-bootstrap'
 import "./navbar.scss";
 import LOGO from "../../assets/Logo.svg";
 import { useMedia } from 'use-media';
