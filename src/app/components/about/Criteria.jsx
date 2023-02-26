@@ -25,7 +25,7 @@ function Criteria() {
                     className="pt-4"
                 >Confused about many coaching institutes? Just check these points…</div>
             </Col>
-            <Col xs={12} className="pt-1">
+            <Col xs={12} className="pt-1 pb-5">
                 <Accordion>
                     {criteriaData?.map((item, index) => {
                         return (

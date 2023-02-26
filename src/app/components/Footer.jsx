@@ -23,11 +23,11 @@ function Footer() {
 
     return (
         // <Container fluid >
-        <Row className='footer-main'>
+        <Row className='footer-main' >
             <Col xs={12}>
                 <Row style={{
                     rowGap: "1rem",
-                    alignItems: "center"
+                    alignItems: "center",
                 }}>
                     <Col lg={2} xs={12} className={isSM ? "d-flex align-items-center justify-content-center" : ""} >
                         <Link to="home"><img src={LOGO} alt="logo" className='main-logo' /></Link>

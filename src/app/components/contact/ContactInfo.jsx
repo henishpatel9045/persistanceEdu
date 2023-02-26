@@ -47,8 +47,8 @@ function ContactInfo() {
             }} />
             <IconCompo img={CALL} Content={() => {
                 return <div className='d-flex flex-column align-items-center justify-content-start'>
-                    <span><a target="_blank" href={`mailto:${SocialLinks.tel}`}>{SocialLinks.tel}</a></span>
-                    <span><a target="_blank" href={`mailto:${SocialLinks.tel2}`}>{SocialLinks.tel2}</a></span>
+                    <span><a target="_blank" href={`tel:${SocialLinks.tel}`}>{SocialLinks.tel}</a></span>
+                    <span><a target="_blank" href={`tel:${SocialLinks.tel2}`}>{SocialLinks.tel2}</a></span>
                 </div>
             }} />
             <IconCompo img={MAIL} Content={() => {

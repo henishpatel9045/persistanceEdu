@@ -312,16 +312,17 @@ $full: 100vh;
 
 .footer-main {
   background: $primary-main;
+  margin: 0;
   padding: 1.5rem 2rem;
   padding-left: 3rem !important;
   padding-right: 3rem !important;
   position: absolute;
   bottom: 0;
-  width: 100vw;
+  right: 10px;
+  width: 101vw;
   z-index: 1000;
   
   @media (max-width: "768px") {
-    width: 104vw;
   }
 
   .footer-nav-link {
@@ -1094,4 +1095,8 @@ button.accordion-button[aria-expanded="true"] {
 
 .main-logo{
   width: 10rem;
+
+  @media (max-width: 768px) {
+    width: 8rem;
+  }
 }

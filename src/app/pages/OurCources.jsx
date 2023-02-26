@@ -22,7 +22,7 @@ function OurCources() {
   }, [])
 
   return (
-    <Row className='pb-3'>
+    <Row className='pb-5'>
       <Col xs={12}>
         <Container fluid className='main-bg-trans' style={{
           padding: "0",

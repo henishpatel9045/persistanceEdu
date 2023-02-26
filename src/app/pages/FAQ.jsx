@@ -4,7 +4,7 @@ import FAQSection from '../components/faq/FAQSection'
 
 function FAQ() {
   return (
-    <Row className='pt-5'>
+    <Row className='pt-5 pb-5'>
       <Col xs={12}>
         <FAQSection />
       </Col>

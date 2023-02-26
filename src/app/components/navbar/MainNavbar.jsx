@@ -24,25 +24,30 @@ function MainNavbar() {
   const isSM = useMedia({ maxWidth: "768px" })
 
   return (
-    <Row className='d-flex align-items-center justify-content-center'>
+    <Row className='d-flex align-items-center justify-content-center' style={{
+      zIndex: 15,
+      position: "absolute",
+      top: 0,
+      left: 0,
+      margin: 0,
+      width: "100vw",
+      padding: 0
+    }}>
       <Col xs={12} style={{
         padding: 0,
         position: "relative",
-        paddingLeft: isSM ? 0 : "4rem",
-        paddingRight: isSM ? 0 : "4rem",
+        // paddingLeft: isSM ? 0 : "4rem",
+        // paddingRight: isSM ? 0 : "6rem",
       }}>
         <Navbar collapseOnSelect expand="lg" className={bgTransparent
           ? 'navbar-main'
           : 'navbar-main-color'} style={{
-            zIndex: 15,
-            position: "absolute",
-            top: 0,
-            left: 0,
+
           }} >
           <Container fluid style={{
-            paddingLeft: "4.5rem"
+            paddingLeft: isSM ? "1rem" : "3.5rem"
           }}>
-            <Link to="home"><Navbar.Brand><img src={LOGO} alt="Logo" className='main-logo' /></Navbar.Brand></Link>
+            <Link to="home"><img src={LOGO} alt="Logo" className='main-logo' /></Link>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" id='nav-toggle-btn' />
             <Navbar.Collapse id="responsive-navbar-nav" className='nav-container'>
               <Nav className="me-auto">

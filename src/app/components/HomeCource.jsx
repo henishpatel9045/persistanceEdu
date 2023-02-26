@@ -10,7 +10,7 @@ function HomeCource() {
     const {courceData:progData} = useContext(HomeContext)
 
     return (
-        <Row className='pt-5'>
+        <Row className='pt-5 pb-3'>
             <Row style={{
                 alignItems: "center",
                 marginBottom: "1rem",
@@ -24,8 +24,8 @@ function HomeCource() {
                     <CallBtnHome tel={SocialLinks.tel} />
                 </Col>
             </Row>
-            <Col xs={12} >
-                <Row className='p-5' style={{
+            <Col xs={12} className="pb-5">
+                <Row className='p-3' style={{
                     rowGap: "1rem"
                 }}>
                     {progData?.map((item, index) => (
