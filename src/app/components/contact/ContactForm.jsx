@@ -37,20 +37,20 @@ function ContactForm() {
                     <div className='d-flex align-items-center justify-content-between' style={{ columnGap: "1rem" }}>
                         <Form.Group className="mb-3" controlId="firstName" style={{ width: "100%" }}>
                             <Form.Label style={{ color: "#888", fontWeight: 400, fontSize: "0.8rem" }}>First Name</Form.Label>
-                            <Form.Control type="text" placeholder="First Name" onChange={(e) => setFirstName(e.target.value)} />
+                            <Form.Control type="text" onChange={(e) => setFirstName(e.target.value)} />
                         </Form.Group>
                         <Form.Group className='mb-3' controlId='lastName' style={{ width: "100%" }}>
                             <Form.Label style={{ color: "#888", fontWeight: 400, fontSize: "0.8rem" }}>Last Name</Form.Label>
-                            <Form.Control type="text" placeholder="Last Name" onChange={(e) => setLastName(e.target.value)} />
+                            <Form.Control type="text" onChange={(e) => setLastName(e.target.value)} />
                         </Form.Group>
                     </div>
                     <Form.Group className="mb-3" controlId="email" style={{ width: "100%" }}>
                         <Form.Label style={{ color: "#888", fontWeight: 400, fontSize: "0.8rem" }}>Email address</Form.Label>
-                        <Form.Control type="email" placeholder="abc@gmail.com" onChange={(e) => setEmail(e.target.value)} />
+                        <Form.Control type="email" onChange={(e) => setEmail(e.target.value)} />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="message" style={{ width: "100%" }}>
                         <Form.Label style={{ color: "#888", fontWeight: 400, fontSize: "0.8rem" }}>Message</Form.Label>
-                        <Form.Control as="textarea" rows={3} placeholder="Hello!..." onChange={(e) => setMessage(e.target.value)} />
+                        <Form.Control as="textarea" rows={3}  onChange={(e) => setMessage(e.target.value)} />
                     </Form.Group>
                     
 
