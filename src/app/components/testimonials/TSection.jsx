@@ -10,7 +10,7 @@ function TSection({ data }) {
             <Col xs={12} className="pt-5">
                 <SectionHeading title="What Our Students Say About Us" />
             </Col>
-            <Col xs={12} md={10} className='d-flex align-items-center justify-content-center pt-4'>
+            <Col xs={12} md={10} className='d-flex align-items-center justify-content-center pt-4 pb-xxl-3'>
                 <Row style={{
                     rowGap: "3rem",
                 }}>

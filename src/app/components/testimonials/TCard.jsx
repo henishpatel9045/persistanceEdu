@@ -9,7 +9,7 @@ function TCard({image, name="", subtitle="", content=""}) {
         <p>
             {content}
         </p>
-        <div>
+        <div className='d-flex align-items-center'>
             <img src={image} alt={name} />
             <div>
                 <h4>{name}</h4>
