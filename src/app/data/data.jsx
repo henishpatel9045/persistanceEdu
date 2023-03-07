@@ -27,10 +27,10 @@ const SitePages = [
     title: "Results",
     href: "achievements",
   },
-  {
-    title: "Inspiring Stories",
-    href: "story",
-  },
+  // {
+  //   title: "Inspiring Stories",
+  //   href: "story",
+  // },
   {
     title: "Students Testimonials",
     href: "testimonials",
