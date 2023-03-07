@@ -4,8 +4,11 @@ import { Row, Col } from 'react-bootstrap'
 import SectionHeading from '../SectionHeading'
 import "../components.scss";
 import OWNER from "../../assets/owner.png"
+import { useMedia } from 'use-media';
 
 function AboutUsSection() {
+    const isXL = useMedia({minWidth: "1800px"})
+
     return (
         <Row className='pt-5'>
             <Col xs={12} className="pt-5">
@@ -22,18 +25,25 @@ function AboutUsSection() {
                 </div>
             </Col>
             <Col xs={12}>
-                <Row className='about-us-content d-flex align-item-start justify-content-center'>
-                    <Col xs={12} md={4}>
-                        <div className='image'>
-                            <img src={OWNER} alt="Ashish Anand" />
+                <Row className='about-us-content d-flex align-item-start justify-content-center' 
+                style={{
+                    position: "relative"
+                }}>
+                    <Col xs={12} md={4} xxl={3} style={{
+                        width: isXL && "16.67%",
+                    }}>
+                        <div className='image h-100'>
+                            <img src={OWNER} alt="Ashish Anand"/>
                             <div>
                                 <h4>Ashish Anand</h4>
                                 <p>IIT Bombay</p>
                             </div>
                         </div>
                     </Col>
-                    <Col xs={12} md={7}>
-                        <div className='content'>
+                    <Col xs={12} md={7} style={{
+                        // height: "100%",
+                    }}>
+                        <div className='content h-100'>
                             <h4>
                                 “Success is not final; failure is not fatal: It is the courage to continue that counts.”
                             </h4>

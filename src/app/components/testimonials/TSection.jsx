@@ -12,7 +12,7 @@ function TSection({ data }) {
             </Col>
             <Col xs={12} md={10} className='d-flex align-items-center justify-content-center pt-4'>
                 <Row style={{
-                    rowGap: "2rem",
+                    rowGap: "3rem",
                 }}>
                     {data?.map((item, index) => {
                         return (

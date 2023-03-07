@@ -6,8 +6,8 @@ import SectionHeading from '../SectionHeading'
 import AResultCard from './AResultCard'
 
 function AResults() {
-    const {rData:data} = useContext(AchievementsContext); 
-    
+    const { rData: data } = useContext(AchievementsContext);
+
     return (
         <Row className='d-flex align-items-center justify-content-center'>
             <Col xs={12}>
@@ -22,10 +22,15 @@ function AResults() {
                                     <h3>{item?.title}</h3>
                                     <h4>{item?.subtitle}</h4>
                                 </Col>
-                                <Row style={{
-                                    rowGap: "1rem"
+                                <Row className='d-flex align-items-center justify-content-center' style={{
+                                    rowGap: "1rem",
                                 }}>
-                                        {item.data?.map((it, ind) => {
+                                    <Col lg={11} xs={12}>
+                                        <img src={item?.image} style={{
+                                            width: "100%"
+                                        }} alt={item?.title} />
+                                    </Col>
+                                    {/* {item.data?.map((it, ind) => {
                                             return <Col key={ind} xs={12} md={6} lg={3}>
                                                 <AResultCard image={it?.image}
                                                     name={it?.name}
@@ -33,7 +38,7 @@ function AResults() {
                                                     subtitle={it?.subtitle} />
                                             </Col>
                                         }
-                                        )}
+                                        )} */}
                                 </Row>
                             </Row>
                         })

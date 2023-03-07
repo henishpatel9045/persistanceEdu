@@ -22,6 +22,7 @@ function MainNavbar() {
     true : false;
 
   const isSM = useMedia({ maxWidth: "768px" })
+  const isLG = useMedia({ maxWidth: "1400px" })
 
   return (
     <Row className='d-flex align-items-center justify-content-center' style={{
@@ -50,9 +51,17 @@ function MainNavbar() {
             <Link to="home"><img src={LOGO} alt="Logo" className='main-logo' /></Link>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" id='nav-toggle-btn' />
             <Navbar.Collapse id="responsive-navbar-nav" className='nav-container'>
-              <Nav className="me-auto">
-              </Nav>
-              <Nav>
+              {/* <Nav className="me-auto">
+              </Nav> */}
+              <Nav 
+              style={{
+                minWidth: "100%", 
+                paddingLeft: isLG ? "5%" : "20%",
+                // backgroundColor: "red",
+                display: "flex",
+                justifyContent: "space-around",
+                alignItems: "center"
+              }}>
                 {
                   items?.map((item, index) => (
                     <Link key={index} to={item.href}
