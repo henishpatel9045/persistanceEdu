@@ -5,9 +5,11 @@ import SectionHeading from './SectionHeading'
 import { ProgramData, SocialLinks } from '../data/data'
 import CallBtnHome from './CallBtnHome'
 import { HomeContext } from '../context/SiteContext'
+import LinkModel from './LinkModel'
 
 function HomeCource() {
     const {courceData:progData} = useContext(HomeContext)
+    const [show, setShow] = useState(false);
 
     return (
         <Row className='pt-5 pb-3'>
@@ -21,7 +23,8 @@ function HomeCource() {
                     <SectionHeading title={"Program IIT-JEE + NEET"} />
                 </Col>
                 <Col md={2} xs={12}>
-                    <CallBtnHome tel={SocialLinks.tel} />
+                    <CallBtnHome onClick={() => setShow(!show)} />
+                    <LinkModel show={show} setShow={setShow} phone={SocialLinks.tel} />
                 </Col>
             </Row>
             <Col xs={12} className="pb-5">

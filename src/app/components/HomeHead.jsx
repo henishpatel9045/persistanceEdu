@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import TextOpacityBG from './TextOpacityBG'
 import "./components.scss"
 import SUB from "../assets/header-sub.png";
@@ -17,14 +17,17 @@ const Header = () => {
     }}>
       <div className='header-main'>
         <h1 style={{ fontWeight: 600, lineHeight: "3.5rem", }}>
-          Getting <TextOpacityBG left={true}>Quality</TextOpacityBG> <br />
+          We make it <TextOpacityBG left={true}>easier to</TextOpacityBG><br />
+          <TextOpacityBG>obtain a quality</TextOpacityBG><br />
+          education with us.
+          {/* Getting <TextOpacityBG left={true}>Quality</TextOpacityBG> <br />
           <TextOpacityBG>Education</TextOpacityBG> is now <br />
-          more easy with us. <br />
+          more easy with us. <br /> */}
           <img src={ROTATE} className="heading-pic" />
         </h1>
         <div>
           <img src={SUB} alt="" />
-          <p>Learning is an essential part of life; education helps us understand and prepare for the future. That's why we provide quality education of your children.</p>
+          <p>Our coaching center sets high standards for education by emphasizing the importance of quality teaching, commitment to student progress and  personalised attention to prepare them for success in their academic pursuits. - mention this in the home page second line.</p>
         </div>
       </div>
       <LinkModel show={show} setShow={setShow} phone={SocialLinks.tel} />
@@ -35,7 +38,7 @@ const Header = () => {
 
 function HomeHead() {
   return (
-    <HeaderBase Header={Header} bg={true}/>
+    <HeaderBase Header={Header} bg={true} />
   )
 }
 

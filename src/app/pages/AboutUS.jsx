@@ -8,6 +8,7 @@ import Criteria from '../components/about/Criteria'
 import { api } from '../api/call'
 import { HomeCarouselImage } from '../data/data'
 import { AboutContext } from '../context/SiteContext'
+import Journey from '../components/about/Journey'
 
 function AboutUS() {
     const [carouImageData, setCarouImageData] = useState([])
@@ -16,7 +17,7 @@ function AboutUS() {
         api.get("about").then(res => {
             if (res.ok) {
                 setCarouImageData(res.data?.carouselImage)
-            }else{
+            } else {
                 setCarouImageData(HomeCarouselImage);
             }
         }).catch(err => {
@@ -25,16 +26,17 @@ function AboutUS() {
     }, [])
 
     return (
-        <AboutContext.Provider value={{carouImageData}}>
+        <AboutContext.Provider value={{ carouImageData }}>
             {/* <Container fluid className='main-bg-trans' style={{
                 padding: "0",
                 margin: "0",
             }}>
                 <AboutHeader />
             </Container> */}
-            <AboutUsSection/>
-            <VideoSection/>
-            <Criteria/>
+            <AboutUsSection />
+            <Journey />
+            <VideoSection />
+            <Criteria />
         </AboutContext.Provider>
     )
 }

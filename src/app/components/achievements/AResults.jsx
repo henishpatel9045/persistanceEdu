@@ -10,9 +10,9 @@ function AResults() {
 
     return (
         <Row className='d-flex align-items-center justify-content-center'>
-            <Col xs={12}>
+            {/* <Col xs={12}>
                 <SectionHeading title="Results" />
-            </Col>
+            </Col> */}
             <Col xs={12}>
                 <Row>
                     {
@@ -25,7 +25,7 @@ function AResults() {
                                 <Row className='d-flex align-items-center justify-content-center' style={{
                                     rowGap: "1rem",
                                 }}>
-                                    <Col lg={11} xs={12}>
+                                    <Col xs={12}>
                                         <img src={item?.image} style={{
                                             width: "100%"
                                         }} alt={item?.title} />

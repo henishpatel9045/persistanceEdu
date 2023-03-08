@@ -12,7 +12,7 @@ function LinkModel({ show, setShow, phone }) {
                 </Modal.Header> */}
             <Modal.Body style={{
                 color: "black"
-            }}>Make call to: {phone}</Modal.Body>
+            }}>Call: {phone}</Modal.Body>
             <Modal.Footer>
                 <Button variant="secondary" onClick={handleClose}>
                     Close

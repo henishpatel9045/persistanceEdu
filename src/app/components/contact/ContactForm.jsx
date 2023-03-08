@@ -31,7 +31,7 @@ function ContactForm() {
 
     return (
         <div className='contact-form-container'>
-            <h3>Contact Us</h3>
+            <h3>Contact us</h3>
             <div className='form-fields'>
                 <Form>
                     <div className='d-flex align-items-center justify-content-between' style={{ columnGap: "1rem" }}>
@@ -55,7 +55,7 @@ function ContactForm() {
                     
 
                     <button className='primary-btn' onClick={handleSubmit}>
-                        Send Yout Message
+                        Send Your Message
                     </button>
                 </Form>
             </div>

@@ -5,6 +5,7 @@ import SQ from "../assets/pic-sq.svg";
 import { HomeContext } from '../context/SiteContext';
 
 import "./components.scss"
+import ImageOverlay from './ImageOverlay';
 import Pagination from './Pagination'
 
 function HeaderIMG() {
@@ -12,11 +13,16 @@ function HeaderIMG() {
     const [totalPages, setTotalPages] = useState(0);
     const [imageData, setImageData] = useState([]);
     const {carouImageData} = useContext(HomeContext);
+    const [show, setShow] = useState(false);
+    const [src, setSrc] = useState(null);
 
     useEffect(() => {
         setImageData(carouImageData?.map((item, index) =>
             <Carousel.Item className="carousel-img" key={index} >
-                <img src={item?.src} className="carousel-img" />
+                <img src={item?.image} className="carousel-img" onClick={() => {
+                    setShow(true)
+                    setSrc(item?.image)
+                }} />
             </Carousel.Item>));
         setTotalPages(carouImageData?.length);
         setCurrPage(carouImageData?.length > 0 ? 1 : 0);
@@ -53,6 +59,7 @@ function HeaderIMG() {
                 nextIcon={<div></div>}>
                 {imageData}
             </Carousel>
+            <ImageOverlay setShow={setShow} src={src} show={show} />
             <Pagination currPage={currPage} totalPages={totalPages} next={handleNext} prev={handlePrev} />
         </div>
     )

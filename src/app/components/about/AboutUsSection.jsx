@@ -7,7 +7,7 @@ import OWNER from "../../assets/owner.png"
 import { useMedia } from 'use-media';
 
 function AboutUsSection() {
-    const isXL = useMedia({minWidth: "1800px"})
+    const isXL = useMedia({ minWidth: "1800px" })
 
     return (
         <Row className='pt-5'>
@@ -25,15 +25,15 @@ function AboutUsSection() {
                 </div>
             </Col>
             <Col xs={12}>
-                <Row className='about-us-content d-flex align-item-start justify-content-center' 
-                style={{
-                    position: "relative"
-                }}>
+                <Row className='about-us-content d-flex align-item-start justify-content-center'
+                    style={{
+                        position: "relative"
+                    }}>
                     <Col xs={12} md={4} xxl={3} style={{
                         width: isXL && "16.67%",
                     }}>
                         <div className='image h-100'>
-                            <img src={OWNER} alt="Ashish Anand"/>
+                            <img src={OWNER} alt="Ashish Anand" />
                             <div>
                                 <h4>Ashish Anand</h4>
                                 <p>IIT Bombay</p>
@@ -49,13 +49,13 @@ function AboutUsSection() {
                             </h4>
                             <br />
                             <p>
-                                Having been an IIT Bombay alumnus myself, I teach my students the tools that prepare them mentally for the exam. The way you perform under those high pressure environment is extremely important. We can give proper care and attention to students. Since so many years,we produced the best results of IIT-JEE from Ranchi City. Here we have a thirst for success of our students and there are no boundaries of hard work at our institution. From past 4 Academic sessions, we have introduced Medical entrance coaching also.
+                                As an alumnus of IIT Bombay, I am passionate about teaching my students the tools they need to succeed in their exams, especially in high-pressure environments. At our institution, we prioritize giving our students the care and attention they need to excel. We have a proven track record of producing the best results in IIT-JEE from Ranchi City, and we are committed to the success of our students. In addition to our JEE coaching, we have also introduced medical entrance coaching over the past four academic sessions.
                             </p>
                             <p>
-                                Persistence was started in 2008 and since then I have made the dreams of hundreds of students to study in the most prestigious institute of the country come alive. We at persistence family are a closely knitted network where we help each other grow.A topper of Netarhat school, then went to study engineering from IIT-Bombay and quit my job at Capgemini to follow my passion to teach.
+                                Persistence was founded in 2008, and since then, we have helped hundreds of students realize their dreams of studying in the most prestigious institutes in the country. Our community is closely-knit, and we work together to help each other grow. As a former topper of Netarhat School and an IIT Bombay engineering graduate, I left my job at Capgemini to follow my passion for teaching.
                             </p>
                             <p>
-                                Our success Ratio in JEE(mains) and JEE(advanced) is way higher than national average.Let us understand how: Around ten lakh students compete for JEE(MAIN) where only 50000 students get admisssions in IIT and NITs. At national level there happens 1 admission out of 20 but at PERSISTENCE we achived the remarkable feat of 1 admission out of 2 due to the combined efforts of our students.
+                                Our success ratio in JEE (Mains) and JEE (Advanced) far exceeds the national average. For example, around ten lakh students compete for JEE (Mains), where only 50,000 students are admitted to IIT and NITs. At the national level, there is only one admission out of twenty, but at Persistence, we have achieved the remarkable feat of one admission out of two, thanks to the combined efforts of our students.
                             </p>
                         </div>
                     </Col>
