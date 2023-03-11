@@ -4,7 +4,7 @@ import { Carousel } from 'react-bootstrap'
 import Pagination from '../Pagination';
 import "../components.scss"
 import { AboutContext } from '../../context/SiteContext';
-
+ 
 function AboutCarousel() {
     const [currPage, setCurrPage] = useState(0);
     const [totalPages, setTotalPages] = useState(0);
