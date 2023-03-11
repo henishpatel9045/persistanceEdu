@@ -11,13 +11,13 @@ function Journey() {
         <Col xs={12}>
             <SectionHeading title={"Journey of Persistence"} />
         </Col>
-        <Col xs={11} xxl={10} className="journey">
-            <h4><b>Meet Ashish</b></h4>
+        <Col xs={12} md={11} xxl={10} className="journey pt-2">
+            <h4>Meet Ashish</h4>
             <p>Before he was the super tutor students look up to today, Ashish was a hard-working student intently focused on his goals. His expansive educational experience at IIT Bombay, with a BTech in Metallurgy and an MTech in Material Science, speaks to those qualities.</p>
             <p>After that, Ashish was offered the opportunity to take up a high-profile, cushy job in the Netherlands for a reputed firm.</p>
             <p>But at that point, he did something that most people wouldn’t. He counted his privileges and decided that it was time to give back to society. And so, he turned down that offer, counted his privileges and decided to use them to benefit those who didn’t have much themselves.</p>
             <br />
-            <h4><b>Passion and Persistence</b></h4>
+            <h4>Passion and Persistence</h4>
             <p>Ashish founded the organisation Persistence Education in 2008 in Ranchi with a goal to identify students from economically less privileged sections of society and help them with opportunities not only to study beyond their means but to aspire for even higher goals.</p>
             <p>And yes, that meant IIT and NEET level goals.</p>
             <p>Charging a fee as low as Rs. 3000 per year, his organisation provides these students with a comprehensive educational experience with lectures, engaging conversations, giving students room to self-study and sometimes, even lightening up the mood with jokes, just to keep them alert. {!show && <button onClick={() => setShow(true)}>Read More...</button>}</p>

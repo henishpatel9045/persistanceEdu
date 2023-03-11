@@ -30,7 +30,7 @@ function ContactForm() {
     console.log(firstName, lastName, email, message);
 
     return (
-        <div className='contact-form-container'>
+        <div className='contact-form-container mt-3'>
             <h3>Contact us</h3>
             <div className='form-fields'>
                 <Form>
