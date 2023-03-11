@@ -11,7 +11,6 @@ import Testimonials from './app/pages/Testimonials'
 import ContactUs from './app/pages/ContactUs'
 import FAQ from './app/pages/FAQ'
 import { useMedia } from 'use-media'
-import { useEffect } from 'react'
 
 
 function App() {

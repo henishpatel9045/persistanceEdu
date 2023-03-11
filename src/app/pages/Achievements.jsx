@@ -19,11 +19,13 @@ function Achievements() {
         setRData(AResultsData);
         setAData(AchievementsData)
       }
+      setRData(AResultsData)
     }).catch(err => {
       setRData(AResultsData);
       setAData(AchievementsData)
     })
   }, [])
+
 
   return (
     <AchievementsContext.Provider value={{ rData, aData }}>
