@@ -33,24 +33,26 @@ function Footer() {
                         <Link to="home"><img src={LOGO} alt="logo" className='main-logo img-fluid' /></Link>
                     </Col>
                     <Col lg={8} xs={12} style={{
-                        // display: "flex",
-                        // justifyContent: isSM ? "center" : "space-around",
-                        // alignItems: "center",
-                        // flexWrap: "wrap",
+                        paddingTop: isSM ? "1rem" : "0"
                     }}>
                         <Row className={isSM ? "d-flex justify-content-center" : ""}>
-                            <Col xs={12} style={{
-                                textAlign: "center",
-                                display: "flex",
-                                justifyContent: "space-around",
-                                alignItems: "center",
-                                flexWrap: "wrap",
-                                columnGap: "0.5rem",
-                                rowGap: "0.5rem",
-                            }} >
-                                {SitePages.map((item, ind) => {
-                                    return <Link key={ind} to={item.href} ><a className='footer-nav-link' href={item.href}>{item.title}</a></Link>
-                                })}
+                            <Col xs={12}>
+                                <Row xs={12} style={{
+                                    display: "flex",
+                                    justifyContent: isSM ? "space-between" : "space-around",
+                                    alignItems: "center",
+                                    flexWrap: "wrap",
+                                    columnGap: "0.5rem",
+                                    rowGap: "1rem",
+                                }}>
+                                    {SitePages.map((item, ind) => {
+                                        return <Col xs={5} key={ind} md="auto"
+                                            style={{
+                                                textAlign: isSM ? "left" : "center",
+                                            }}
+                                        ><Link to={item.href} className='footer-nav-link' >{item.title}</Link></Col>
+                                    })}
+                                </Row>
                             </Col>
                         </Row>
                     </Col>

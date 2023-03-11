@@ -32,7 +32,7 @@ function FAQSection() {
                     })}
                 </Accordion>
             </Col>
-            <Col xs={12} className='d-flex align-items-center justify-content-center'>
+            <Col xs={12} className='d-flex align-items-center justify-content-center pt-2'>
                 <span className='faq-contact-link'>
                     Still have a question? <Link to={"contact"}>Ask your question here</Link>
                 </span>
