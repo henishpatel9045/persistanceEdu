@@ -14,9 +14,9 @@ function MainNavbar() {
   }
   currPath = currPath.replace("/", "");
 
-  useEffect(() => {
-    document.title = `PersistanceEdu - ${currPath}`
-  }, [currPath])
+  // useEffect(() => {
+  //   document.title = `PersistanceEdu - ${currPath}`
+  // }, [currPath])
 
   const bgTransparent = currPath?.includes("home") ?
     true : false;
