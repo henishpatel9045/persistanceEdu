@@ -1127,3 +1127,23 @@ button.accordion-button[aria-expanded="true"] {
     max-width: 100%;
   }
 }
+
+
+.journey{
+  position: relative;
+  *{
+    text-align: justify;
+    color: #3d3d3d;
+    button{
+      
+      background: transparent;
+      color: $primary-main;
+      border: 0;
+      outline: 0;
+    }
+  }
+  p{
+    font-size: 1rem;
+  }
+
+}
