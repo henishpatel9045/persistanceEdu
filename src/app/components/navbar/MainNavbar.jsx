@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Col, Container, Navbar, Nav, Row } from 'react-bootstrap'
 import "./navbar.scss";
 import LOGO from "../../assets/Logo.svg";
@@ -23,6 +23,7 @@ function MainNavbar() {
 
   const isSM = useMedia({ maxWidth: "768px" })
   const isLG = useMedia({ maxWidth: "1400px" })
+  const [expd, setExpd] = useState(false)
 
   return (
     <Row className='d-flex align-items-center justify-content-center' style={{
@@ -40,7 +41,7 @@ function MainNavbar() {
         // paddingLeft: isSM ? 0 : "4rem",
         // paddingRight: isSM ? 0 : "6rem",
       }}>
-        <Navbar collapseOnSelect expand="lg" className={bgTransparent
+        <Navbar collapseOnSelect expanded={expd} expand="lg" className={bgTransparent
           ? 'navbar-main'
           : 'navbar-main-color'} style={{
 
@@ -49,22 +50,23 @@ function MainNavbar() {
             paddingLeft: isSM ? "1rem" : "3.5rem"
           }}>
             <Link to="home"><img src={LOGO} alt="Logo" className='main-logo' /></Link>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" id='nav-toggle-btn' />
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" id='nav-toggle-btn' onClick={() => setExpd(!expd)} />
             <Navbar.Collapse id="responsive-navbar-nav" className='nav-container'>
               {/* <Nav className="me-auto">
               </Nav> */}
-              <Nav 
-              style={{
-                minWidth: "100%", 
-                paddingLeft: isLG ? "5%" : "20%",
-                // backgroundColor: "red",
-                display: "flex",
-                justifyContent: "space-around",
-                alignItems: "center"
-              }}>
+              <Nav
+                style={{
+                  minWidth: "100%",
+                  paddingLeft: isLG ? "5%" : "20%",
+                  // backgroundColor: "red",
+                  display: "flex",
+                  justifyContent: "space-around",
+                  alignItems: "center"
+                }}>
                 {
                   items?.map((item, index) => (
                     <Link key={index} to={item.href}
+                      onClick={() => setExpd(!expd)}
                       className={currPath == item.href
                         ? 'nav-btn link-selected'
                         : 'nav-btn'} style={{
