@@ -502,7 +502,7 @@ $full: 100vh;
 
 .system-content-container {
   width: 100vw;
-  padding: 1rem 2rem;
+  padding: 1rem 0rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -513,6 +513,11 @@ $full: 100vh;
     height: 80%;
     object-fit: contain;
     z-index: 1;
+
+    @media (max-width: 768px) {
+      width: 95%;
+      height: 95%;
+    }
   }
 }
 

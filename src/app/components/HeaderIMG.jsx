@@ -50,6 +50,7 @@ function HeaderIMG() {
         }}>
             <img src={SQ} className='ellipse' />
             <Carousel
+                interval={1000}
                 ref={currRef}
                 onSlide={(e) => setCurrPage(e + 1)}
                 fade
