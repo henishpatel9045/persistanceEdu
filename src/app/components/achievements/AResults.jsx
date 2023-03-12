@@ -1,10 +1,11 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useContext } from 'react'
 import { Col, Row } from 'react-bootstrap'
 import { useMedia } from 'use-media'
 import { AchievementsContext } from '../../context/SiteContext'
-import { AResultsData } from '../../data/data'
 import SectionHeading from '../SectionHeading'
 import AResultCard from './AResultCard'
+
+import NOIMG from "../../assets/res-no-img.png"
 
 function AResults() {
     const { rData: data } = useContext(AchievementsContext);
@@ -32,7 +33,7 @@ function AResults() {
                                     }}>
                                         {item.data?.map((it, ind) => {
                                             return <Col key={ind} xs={12} md={6} lg={3}>
-                                                <AResultCard image={it?.image}
+                                                <AResultCard image={it?.image ? it.image : NOIMG}
                                                     name={it?.name}
                                                     title={it?.title}
                                                     subtitle={it?.subtitle} />

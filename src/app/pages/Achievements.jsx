@@ -19,7 +19,6 @@ function Achievements() {
         setRData(AResultsData);
         setAData(AchievementsData)
       }
-      setRData(AResultsData)
     }).catch(err => {
       setRData(AResultsData);
       setAData(AchievementsData)
