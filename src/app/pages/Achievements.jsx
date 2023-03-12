@@ -7,27 +7,31 @@ import { AchievementsContext } from '../context/SiteContext'
 import { AchievementsData, AResultsData } from '../data/data'
 
 function Achievements() {
-  const [rData, setRData] = useState([])
+  const [rJEEData, setRJEEData] = useState([])
+  const [rNEETData, setRNEETData] = useState([])
   const [aData, setAData] = useState([])
 
   useEffect(() => {
     api.get("results").then(res => {
       if (res.ok) {
-        setRData(res.data.results)
+        setRJEEData(res.data.jee_results)
+        setRNEETData(res.data.neet_results)
         setAData(res.data.aCards)
       } else {
-        setRData(AResultsData);
+        setRJEEData([]);
+        setRNEETData([]);
         setAData(AchievementsData)
       }
     }).catch(err => {
-      setRData(AResultsData);
+      setRJEEData([]);
+      setRNEETData([]);
       setAData(AchievementsData)
     })
   }, [])
 
 
   return (
-    <AchievementsContext.Provider value={{ rData, aData }}>
+    <AchievementsContext.Provider value={{ rJEEData, rNEETData, aData }}>
       <Container className='pt-5' fluid style={{
         padding: "0",
         margin: "0",

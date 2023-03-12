@@ -590,9 +590,31 @@ $full: 100vh;
   right: 0;
 
   @media (max-width: 768px) {
-    position: relative;
-    float: right;
-    margin-right: -1.5rem;
+    // position: absolute;
+    // float: right;
+    // margin-right: -2rem;
+    top: 2rem;
+    right: -1rem;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+
+    h6 {
+      font-size: 0.8rem;
+      line-height: 0.8rem;
+      width: 6rem !important;
+    }
+  
+    button {
+      background: transparent;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      img {
+        width: 3rem !important;
+        height: 3rem !important;
+      }
+    }
+
   }
 
   h6 {
@@ -600,7 +622,7 @@ $full: 100vh;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1rem;
-    width: 9rem !important;
+    width: 9rem;
     text-align: end;
   }
 
@@ -610,8 +632,8 @@ $full: 100vh;
     border: 0;
     outline: 0;
     img {
-      width: 4.8rem !important;
-      height: 4.8rem !important;
+      width: 4.8rem;
+      height: 4.8rem;
     }
   }
 }

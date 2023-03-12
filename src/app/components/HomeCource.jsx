@@ -6,10 +6,12 @@ import { ProgramData, SocialLinks } from '../data/data'
 import CallBtnHome from './CallBtnHome'
 import { HomeContext } from '../context/SiteContext'
 import LinkModel from './LinkModel'
+import { useMedia } from 'use-media'
 
 function HomeCource() {
     const {courceData:progData} = useContext(HomeContext)
     const [show, setShow] = useState(false);
+    const isSM = useMedia({ maxWidth: "768px" })
 
     return (
         <Row className='pt-5 pb-3'>
@@ -26,6 +28,7 @@ function HomeCource() {
                     <CallBtnHome onClick={() => setShow(!show)} />
                     <LinkModel show={show} setShow={setShow} phone={SocialLinks.tel} />
                 </Col>
+                {isSM && <br/>}
             </Row>
             <Col xs={12} className="pb-5">
                 <Row className='p-3' style={{
