@@ -10,7 +10,6 @@ import NOIMG from "../../assets/res-no-img.png"
 function AResults() {
     const { rJEEData: jeeData, rNEETData: neetData } = useContext(AchievementsContext);
     const isSM = useMedia({ maxWidth: "768px" })
-    const isBG = useMedia({ minWidth: "1920px" })
 
     return (
         <Row className='d-flex align-items-center justify-content-center' style={{
@@ -27,12 +26,15 @@ function AResults() {
                             {
                                 jeeData?.map((item, index) => {
                                     return <Row key={index} className="d-flex align-items-center justify-content-center p-md-5">
-                                        <Col xs={12} md={10} className="a-result-header pb-1">
+                                        <Col xs={12} md={10} className="a-result-header pb-1"
+                                        style={{
+                                            paddingTop: isSM ? "2rem" : "0rem" 
+                                        }}>
                                             <h3>{item?.title}</h3>
                                             <h4>{item?.subtitle}</h4>
                                         </Col>
                                         <Row style={{
-                                            rowGap: "1rem"
+                                            rowGap: "1rem",
                                         }}>
                                             {item.data?.map((it, ind) => {
                                                 return <Col key={ind} xs={4} xxl={2} lg={3}>
@@ -66,10 +68,11 @@ function AResults() {
                                             <h4>{item?.subtitle}</h4>
                                         </Col>
                                         <Row style={{
-                                            rowGap: "1rem"
+                                            rowGap: isSM ? "0.2rem" : "1rem",
+                                            columnGap: isSM ? "0.2rem" : "1rem"
                                         }}>
                                             {item.data?.map((it, ind) => {
-                                                return <Col key={ind} xs={12} xxl={2} md={6} lg={3}>
+                                                return <Col key={ind} xs={4} xxl={2} md={6} lg={3}>
                                                     <AResultCard image={it?.image ? it.image : NOIMG}
                                                         name={it?.name}
                                                         title={it?.title}
