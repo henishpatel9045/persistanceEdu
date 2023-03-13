@@ -5,7 +5,7 @@ import "../components.scss"
 function AResultCard({image, name, title, subtitle}) {
   return (
     <div className='ar-card'>
-        <img src={DOME} alt="Dome" className='dome' />
+        {/* <img src={DOME} alt="Dome" className='dome' /> */}
         <img src={image} alt={name} />
         <div>
             <h4>
