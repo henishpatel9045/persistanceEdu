@@ -68,8 +68,7 @@ function AResults() {
                                             <h4>{item?.subtitle}</h4>
                                         </Col>
                                         <Row style={{
-                                            rowGap: isSM ? "0.2rem" : "1rem",
-                                            columnGap: isSM ? "0.2rem" : "1rem"
+                                            rowGap: "1rem",
                                         }}>
                                             {item.data?.map((it, ind) => {
                                                 return <Col key={ind} xs={4} xxl={2} md={6} lg={3}>
