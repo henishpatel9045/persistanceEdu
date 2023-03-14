@@ -22,12 +22,14 @@ function AchieveHeader() {
         <Row className={`d-flex align-items-center justify-content-center p-${isSM ? "3" : "5"}`}
           style={{
             rowGap: "1rem",
-            marginRight: isGAPSupported ? "0rem" : "1rem",
-            marginBottom: isGAPSupported ? "0rem" : "1rem",
+
           }}>
           {data?.map((item, index) => {
             return (
-              <Col key={index} xs={12} sm={6} lg={4}>
+              <Col key={index} xs={12} sm={6} lg={4} style={{
+                marginRight: isGAPSupported ? "0rem" : "1rem",
+                marginBottom: isGAPSupported ? "0rem" : "1rem",
+              }}>
                 <ACard desc={item.title} />
               </Col>
             )

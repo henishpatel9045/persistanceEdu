@@ -15,7 +15,7 @@ function AResults() {
     return (
         <Row className='d-flex align-items-center justify-content-center' style={{
             paddingBottom: isSM ? "6rem" : "2rem",
-            
+
         }}>
             {jeeData?.length && <>
                 <Col xs={12}>
@@ -28,19 +28,20 @@ function AResults() {
                                 jeeData?.map((item, index) => {
                                     return <Row key={index} className="d-flex align-items-center justify-content-center p-md-5">
                                         <Col xs={12} md={10} className="a-result-header pb-1"
-                                        style={{
-                                            paddingTop: isSM ? "2rem" : "0rem" 
-                                        }}>
+                                            style={{
+                                                paddingTop: isSM ? "2rem" : "0rem"
+                                            }}>
                                             <h3>{item?.title}</h3>
                                             <h4>{item?.subtitle}</h4>
                                         </Col>
                                         <Row style={{
                                             rowGap: "1rem",
-                                            marginRight: isGAPSupported ? "0rem" : "1rem",
-                                            marginBottom: isGAPSupported ? "0rem" : "1rem",
                                         }}>
                                             {item.data?.map((it, ind) => {
-                                                return <Col key={ind} xs={4} xxl={2} lg={3}>
+                                                return <Col key={ind} xs={4} xxl={2} lg={3} style={{
+                                                    marginRight: isGAPSupported ? "0rem" : "1rem",
+                                                    marginBottom: isGAPSupported ? "0rem" : "1rem",
+                                                }}>
                                                     <AResultCard image={it?.image ? it.image : NOIMG}
                                                         name={it?.name}
                                                         title={it?.title}
