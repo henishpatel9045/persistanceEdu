@@ -73,11 +73,13 @@ function AResults() {
                                         </Col>
                                         <Row style={{
                                             rowGap: "1rem",
-                                            marginRight: isGAPSupported ? "0rem" : "1rem",
-                                            marginBottom: isGAPSupported ? "0rem" : "1rem",
                                         }}>
                                             {item.data?.map((it, ind) => {
-                                                return <Col key={ind} xs={4} xxl={2} md={6} lg={3}>
+                                                return <Col key={ind} xs={4} xxl={2} md={6} lg={3}
+                                                    style={{
+                                                        marginRight: isGAPSupported ? "0rem" : "1rem",
+                                                        marginBottom: isGAPSupported ? "0rem" : "1rem",
+                                                    }}>
                                                     <AResultCard image={it?.image ? it.image : NOIMG}
                                                         name={it?.name}
                                                         title={it?.title}

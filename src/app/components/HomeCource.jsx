@@ -34,12 +34,12 @@ function HomeCource() {
             <Col xs={12} className="pb-5">
                 <Row className='p-3' style={{
                     rowGap: "1rem",
-                    marginRight: isGAPSupported ? "0rem" : "1rem",
-                    marginBottom: isGAPSupported ? "0rem" : "1rem",
                 }}>
                     {progData?.map((item, index) => (
                         <Col key={index} md={4} style={{
                             minHeight: "20rem",
+                            marginRight: isGAPSupported ? "0rem" : "1rem",
+                            marginBottom: isGAPSupported ? "0rem" : "1rem",
                         }}>
                             <HomeCourceCard title={item.title} content={item.desc} href="http://www.google.com" />
                         </Col>))}

@@ -15,12 +15,14 @@ function TSection({ data }) {
             <Col xs={12} md={10} className='d-flex align-items-center justify-content-center pt-4 pb-xxl-3'>
                 <Row style={{
                     rowGap: "3rem",
-                    marginRight: isGAPSupported ? "0rem" : "3rem",
-                    marginBottom: isGAPSupported ? "0rem" : "1rem",
                 }}>
                     {data?.map((item, index) => {
                         return (
-                            <Col xs={12} md={4} key={index}>
+                            <Col xs={12} md={4} key={index}
+                                style={{
+                                    marginRight: isGAPSupported ? "0rem" : "3rem",
+                                    marginBottom: isGAPSupported ? "0rem" : "1rem",
+                                }}>
                                 <TCard image={item.image}
                                     content={item.content}
                                     name={item.name}

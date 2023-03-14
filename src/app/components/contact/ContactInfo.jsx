@@ -44,8 +44,8 @@ function ContactInfo() {
     return (
         <div className='contact-info d-flex flex-column align-items-start justify-content-center' style={{
             rowGap: "1rem",
-            marginRight: isGAPSupported ? "0rem" : "1rem",
-            marginBottom: isGAPSupported ? "0rem" : "1rem",
+            // marginRight: isGAPSupported ? "0rem" : "1rem",
+            // marginBottom: isGAPSupported ? "0rem" : "1rem",
         }}>
             <BGCompo show={true} />
             <h3>Contact Information</h3>

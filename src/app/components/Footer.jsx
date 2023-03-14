@@ -28,14 +28,14 @@ function Footer() {
             <Col xs={12}>
                 <Row style={{
                     rowGap: "1rem",
-                    marginRight: isGAPSupported ? "0rem" : "1rem",
-                    marginBottom: isGAPSupported ? "0rem" : "1rem",
                     alignItems: "center",
                 }}>
-                    <Col lg={2} xs={12} 
-                    style={{
-                        marginLeft: isSM ? "-3rem" : "0"
-                    }}
+                    <Col lg={2} xs={12}
+                        style={{
+                            marginLeft: isSM ? "-3rem" : "0",
+                            marginRight: isGAPSupported ? "0rem" : "1rem",
+                            marginBottom: isGAPSupported ? "0rem" : "1rem",
+                        }}
                     // className={isSM ? "d-flex align-items-center justify-content-center" : ""} 
                     >
                         <Link to="home"><img src={LOGO} alt="logo" className='main-logo img-fluid' /></Link>
@@ -44,7 +44,7 @@ function Footer() {
                         paddingTop: isSM ? "1rem" : "0",
                         marginLeft: isSM ? "-3rem" : "0"
                     }}>
-                        <Row 
+                        <Row
                         // className={isSM ? "d-flex justify-content-center" : ""}
                         >
                             <Col xs={12}>
@@ -54,13 +54,14 @@ function Footer() {
                                     alignItems: "center",
                                     flexWrap: "wrap",
                                     rowGap: "0.8rem",
-                                    marginRight: isGAPSupported ? "0rem" : "1rem",
-                                    marginBottom: isGAPSupported ? "0rem" : "1rem",
+
                                 }}>
                                     {SitePages.map((item, ind) => {
                                         return <Col xs={5} key={ind} md="auto"
                                             style={{
                                                 textAlign: isSM ? "left" : "center",
+                                                marginRight: isGAPSupported ? "0rem" : "0.8rem",
+                                                marginBottom: isGAPSupported ? "0rem" : "0.8rem",
                                             }}
                                         ><Link to={item.href} className='footer-nav-link' >{item.title}</Link></Col>
                                     })}
