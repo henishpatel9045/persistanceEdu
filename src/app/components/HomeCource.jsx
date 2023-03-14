@@ -9,9 +9,10 @@ import LinkModel from './LinkModel'
 import { useMedia } from 'use-media'
 
 function HomeCource() {
-    const {courceData:progData} = useContext(HomeContext)
+    const { courceData: progData } = useContext(HomeContext)
     const [show, setShow] = useState(false);
     const isSM = useMedia({ maxWidth: "768px" })
+    const isGAPSupported = CSS.supports("gap: 1rem");
 
     return (
         <Row className='pt-5 pb-3'>
@@ -20,7 +21,7 @@ function HomeCource() {
                 marginBottom: "1rem",
                 width: "100%",
                 position: "relative",
-            }} > 
+            }} >
                 <Col md={12} xs={12}>
                     <SectionHeading title={"Program IIT-JEE + NEET"} />
                 </Col>
@@ -28,11 +29,13 @@ function HomeCource() {
                     <CallBtnHome onClick={() => setShow(!show)} />
                     <LinkModel show={show} setShow={setShow} phone={SocialLinks.tel} />
                 </Col>
-                {isSM && <br/>}
+                {isSM && <br />}
             </Row>
             <Col xs={12} className="pb-5">
                 <Row className='p-3' style={{
-                    rowGap: "1rem"
+                    rowGap: "1rem",
+                    marginRight: isGAPSupported ? "0rem" : "1rem",
+                    marginBottom: isGAPSupported ? "0rem" : "1rem",
                 }}>
                     {progData?.map((item, index) => (
                         <Col key={index} md={4} style={{

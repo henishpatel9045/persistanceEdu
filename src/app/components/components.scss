@@ -321,7 +321,7 @@ $full: 100vh;
   right: 10px;
   width: 101vw;
   z-index: 1000;
-
+  
   
   .footer-nav-link {
     color: white;
@@ -920,9 +920,9 @@ $full: 100vh;
   }
 
   img {
-    height: 80%;  
-    max-height: 18rem;
-    max-width: 100% !important;
+    height: 12rem;
+    // max-height: 15rem;
+    max-width: 60%;
     object-fit: cover;
     margin-bottom: -1rem;
     background-image: attr(src);
@@ -953,13 +953,19 @@ $full: 100vh;
     }
   }
 
+  @media (min-width: 1920px) {
+    img{
+      height: 10rem;
+      max-width: 50%;
+    }
+  }
+
   @media (max-width: 768px) {
     height: 11rem;
     max-height: fit-content;
     img{
-      height: 60%;
-      // height: fit-content !important;
-      width: 100%;
+      height: 7rem;
+      max-width: 70%;
     }
     div {
       width: 100%;

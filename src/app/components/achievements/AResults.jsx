@@ -10,6 +10,7 @@ import NOIMG from "../../assets/res-no-img.png"
 function AResults() {
     const { rJEEData: jeeData, rNEETData: neetData } = useContext(AchievementsContext);
     const isSM = useMedia({ maxWidth: "768px" })
+    const isGAPSupported = CSS.supports("gap: 1rem");
 
     return (
         <Row className='d-flex align-items-center justify-content-center' style={{
@@ -35,6 +36,8 @@ function AResults() {
                                         </Col>
                                         <Row style={{
                                             rowGap: "1rem",
+                                            marginRight: isGAPSupported ? "0rem" : "1rem",
+                                            marginBottom: isGAPSupported ? "0rem" : "1rem",
                                         }}>
                                             {item.data?.map((it, ind) => {
                                                 return <Col key={ind} xs={4} xxl={2} lg={3}>
@@ -69,6 +72,8 @@ function AResults() {
                                         </Col>
                                         <Row style={{
                                             rowGap: "1rem",
+                                            marginRight: isGAPSupported ? "0rem" : "1rem",
+                                            marginBottom: isGAPSupported ? "0rem" : "1rem",
                                         }}>
                                             {item.data?.map((it, ind) => {
                                                 return <Col key={ind} xs={4} xxl={2} md={6} lg={3}>

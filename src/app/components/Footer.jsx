@@ -20,6 +20,7 @@ const MapBtn = ({ href }) => {
 
 function Footer() {
     const isSM = useMedia({ maxWidth: "768px" })
+    const isGAPSupported = CSS.supports("gap: 1rem");
 
     return (
         // <Container fluid >
@@ -27,23 +28,34 @@ function Footer() {
             <Col xs={12}>
                 <Row style={{
                     rowGap: "1rem",
+                    marginRight: isGAPSupported ? "0rem" : "1rem",
+                    marginBottom: isGAPSupported ? "0rem" : "1rem",
                     alignItems: "center",
                 }}>
-                    <Col lg={2} xs={12} className={isSM ? "d-flex align-items-center justify-content-center" : ""} >
+                    <Col lg={2} xs={12} 
+                    style={{
+                        marginLeft: isSM ? "-3rem" : "0"
+                    }}
+                    // className={isSM ? "d-flex align-items-center justify-content-center" : ""} 
+                    >
                         <Link to="home"><img src={LOGO} alt="logo" className='main-logo img-fluid' /></Link>
                     </Col>
                     <Col lg={8} xs={12} style={{
-                        paddingTop: isSM ? "1rem" : "0"
+                        paddingTop: isSM ? "1rem" : "0",
+                        marginLeft: isSM ? "-3rem" : "0"
                     }}>
-                        <Row className={isSM ? "d-flex justify-content-center" : ""}>
+                        <Row 
+                        // className={isSM ? "d-flex justify-content-center" : ""}
+                        >
                             <Col xs={12}>
                                 <Row xs={12} style={{
                                     display: "flex",
                                     justifyContent: isSM ? "space-between" : "space-around",
                                     alignItems: "center",
                                     flexWrap: "wrap",
-                                    columnGap: "0.5rem",
-                                    rowGap: "1rem",
+                                    rowGap: "0.8rem",
+                                    marginRight: isGAPSupported ? "0rem" : "1rem",
+                                    marginBottom: isGAPSupported ? "0rem" : "1rem",
                                 }}>
                                     {SitePages.map((item, ind) => {
                                         return <Col xs={5} key={ind} md="auto"
