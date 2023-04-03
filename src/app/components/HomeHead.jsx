@@ -11,7 +11,7 @@ import { useMedia } from 'use-media';
 
 const Header = () => {
   const [show, setShow] = useState(false);
-  const isXS = useMedia({maxWidth: "768px"})
+  const isXS = useMedia({ maxWidth: "768px" })
 
   return (
     <div className='header-text-container' style={{
@@ -19,9 +19,10 @@ const Header = () => {
     }}>
       <div className='header-main'>
         <h1 style={{ fontWeight: 600, lineHeight: "3.5rem", }}>
-          We make it <TextOpacityBG left={true}>easier to</TextOpacityBG><br />
-          <TextOpacityBG>obtain a quality</TextOpacityBG><br />
-          education with us.
+          With us, obtaining a  <TextOpacityBG left={true}>quality</TextOpacityBG><br />
+          <TextOpacityBG>education</TextOpacityBG> is made easier.
+
+
           {/* Getting <TextOpacityBG left={true}>Quality</TextOpacityBG> <br />
           <TextOpacityBG>Education</TextOpacityBG> is now <br />
           more easy with us. <br /> */}
