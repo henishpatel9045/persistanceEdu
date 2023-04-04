@@ -19,13 +19,9 @@ const Header = () => {
     }}>
       <div className='header-main'>
         <h1 style={{ fontWeight: 600, lineHeight: "3.5rem", }}>
-          With us, obtaining a  <TextOpacityBG left={true}>quality</TextOpacityBG><br />
-          <TextOpacityBG>education</TextOpacityBG> is made easier.
-
-
-          {/* Getting <TextOpacityBG left={true}>Quality</TextOpacityBG> <br />
-          <TextOpacityBG>Education</TextOpacityBG> is now <br />
-          more easy with us. <br /> */}
+          With us, <TextOpacityBG left={true}>obtaining a</TextOpacityBG><br/>
+          <TextOpacityBG left={false}>quality</TextOpacityBG> education<br/>
+          is made  easier.
           <img src={ROTATE} className="heading-pic" />
         </h1>
         <div>
